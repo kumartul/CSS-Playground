@@ -1,0 +1,38 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ededed;
+}
+.drops{
+    position: relative;
+}
+.drop{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border-radius: 57% 43% 37% 63% / 45% 52% 38% 55%;
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05), 15px 25px 10px rgba(0, 0, 0, 0.1), 15px 20px 20px rgba(0, 0, 0, 0.05), inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+}
+.drop::before{
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 25% 75% 37% 63% / 40% 43% 57% 60%;
+}
+.drop::after{
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 65px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 25% 75% 37% 63% / 40% 43% 57% 60%;
+}
