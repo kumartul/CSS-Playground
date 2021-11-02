@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Home - CodeWithHarry</title>
+
+    <!-- BootStrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./public/assets/icons/favicon.ico">
+
+    <!-- Page Specific CSS -->
+    <style> 
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <!-- Logo -->
+        <a href="#" class = "logo"><img src="./public/assets/images/logo.png" alt="CodeWithHarry Logo"></a>
+
+        <div class="container-fluid">
+
+            <!-- 
+                Hamburger button 
+                This button will remain hidden until the desired width is achieved
+            -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links Container -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Links List -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Videos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact Me</a>
+                    </li>
+                </ul>
+
+                <!-- Form -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+                    <button type="button" class="btn btn-danger search">Search</button>
+
+                    <button type="button" class="btn btn-danger">Login</button>
+                    <button type="button" class="btn btn-danger">SignUp</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Jumbotron -->
+        <section class="jumbotron text-center">
+
+            <!-- Logo -->
+            <img src="./public/assets/images/logo.png" alt="CodeWithHarry Logo">
+
+            <!-- Text -->
+            <article class="text-muted text">
+                <p>
+                    Confused on which course to take? I have got you covered. Browse courses and find out the best course for you. Its free!
+                    <br>
+                    Code With Harry is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.
+                </p>
+            </article>
+
+            <!-- Buttons -->
+            <article>
+                <p>
+                    <button class="btn btn-danger">Browse Blog</button>
+                    <button class="btn btn-success">Browse Video Tutorials</button>
+                    <button class="btn btn-primary">Contact Me</button>
+                </p>
+            </article>
+        </section>
+
+        <!-- Cards -->
+        <section>
+            <div class="container cards">
+                <div class="row">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="./public/assets/images/laptop.jpg" class="card-img-top" alt="A laptop, a smartphone and a green plant with a cup of tea">
+                        <div class="card-body">
+                          <h5 class="card-title">Free Video Courses</h5>
+                          <p class="card-text">Get your programming career started with these free video courses. Source code is available with all the videos for amazing learning experience</p>
+                          <a href="#" class="btn btn-primary d-block">Browse Video Courses</a>
+                        </div>
+                      </div>
+
+                      <div class="card text-center" style="width: 18rem;">
+                        <img src="./public/assets/images/code.jpg" class="card-img-top" alt="Ruby on Rails Code">
+                        <div class="card-body">
+                          <h5 class="card-title">Coding Articles</h5>
+                          <p class="card-text">Some of the latest coding information compiled in the form of coding articles. Keep your programming knowledge up to date with these articles.</p>
+                          <a href="#" class="btn btn-primary d-block">Go to Blog</a>
+                        </div>
+                      </div>
+                      
+                      <div class="card text-center" style="width: 18rem;">
+                        <img src="./public/assets/images/setup.jpg" class="card-img-top" alt="An awesome programming setup with almost everything">
+                        <div class="card-body">
+                          <h5 class="card-title">Contact Me</h5>
+                          <p class="card-text">Learn programming from these free courses. Examples are available with these tutorials. You can contact me for any doubt and I will get back to you!</p>
+                          <a href="#" class="btn btn-primary d-block">Contact Me</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class = "container-fluid bg-dark py-3 text-light">
+        <p class = "text-center mb-0">Copyright &copy; 2020-2021 CodeWithHarry.com</p>
+    </footer>
+</body>
+</html>
