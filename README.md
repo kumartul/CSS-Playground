@@ -5,3 +5,8 @@ Create and Destroy
 
 ### Have a Cup of Tea, Please!
 ![](./public/GIF/Cup%20of%20Tea.gif)
+
+### What time it is?
+![](./public/GIF/Clock.gif)
+
+---
