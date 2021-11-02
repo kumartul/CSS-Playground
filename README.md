@@ -9,4 +9,7 @@ Create and Destroy
 ### What time it is?
 ![](./public/GIF/Clock.gif)
 
+### Waiting for the Rain...
+![](public/Images/Water_Drop.png)
+
 ---
