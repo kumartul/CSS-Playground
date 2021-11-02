@@ -1,0 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box; /* Use alternative box model */
+}
