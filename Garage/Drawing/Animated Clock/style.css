@@ -1,0 +1,66 @@
+body{
+    background: #262626;
+}
+.clock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border: 15px solid #ff5f5f;
+    border-radius: 50%;
+    background: url(./assets/clock.jpg);
+    background-size: cover;
+    box-shadow: -2px 2px 0 #e23232, inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.clock::before{
+    content: "";
+    position: absolute;
+    top: calc(50% - 3px);
+    left: 50%;
+    width: 40%;
+    height: 6px;
+    background: #262626;
+    border-radius: 3px;
+    transform-origin: left;
+    animation-name: animate;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.clock::after{
+    content: "";
+    position: absolute;
+    top: calc(50% - 3px);
+    left: 50%;
+    width: 30%;
+    height: 6px;
+    background: #262626;
+    border-radius: 3px;
+    transform-origin: left;
+    animation-name: animate;
+    animation-duration: 48s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.clock span{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background: #ff5f5f;
+    border-radius: 50%;
+    z-index: 1;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(270deg);
+    }
+}
