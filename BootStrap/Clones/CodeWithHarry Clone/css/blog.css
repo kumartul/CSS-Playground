@@ -1,0 +1,21 @@
+/* Blog Links */
+
+/* Target the first link only to prevent the weird styling of buttons on hover */
+.container .blogs .blog a:first-child{
+    text-decoration: none;
+    color: #343a40 !important;
+}
+.container .blogs .blog a:first-child:hover{
+    color: black !important;
+    text-decoration: underline;
+}
+
+/* Handler Buttons (Next, Previous) */
+.handler:disabled{
+    opacity: 0.65 !important;
+}
+
+/* Next Button */
+.float-right{
+    float: right;
+}
