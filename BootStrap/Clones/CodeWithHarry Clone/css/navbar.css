@@ -1,0 +1,29 @@
+/* Navbar */
+.bg-dark{
+    background: #343a40 !important;
+}
+
+/* Logo */
+.navbar > .logo img{
+    width: 39px;
+    margin: 0 13px;
+    margin-left: 29px;
+    margin-right: 1px;
+}
+
+/* Navbar Links */
+.nav-item a{
+    color: white;
+    font-weight: bold;
+}
+.nav-item a:hover{
+    color: hsla(0, 0%, 100%, 0.5) !important;
+}
+
+/* Navbar Buttons */
+.d-flex .search{
+    margin-right: 15px;
+}
+.d-flex .btn:nth-child(3){
+    margin-right: 8px;
+}
