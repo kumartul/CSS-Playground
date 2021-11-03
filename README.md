@@ -24,4 +24,9 @@ Create and Destroy
 **Clone**
 ![](./public/GIF/Clone.gif)
 
+**Todos**
+- [] Create the floating login modal
+- [] Create the floating signup modal
+- [] Create the typing text animation
+
 ---
