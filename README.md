@@ -12,6 +12,12 @@ Create and Destroy
 ### Waiting for the Rain...
 ![](public/Images/Water_Drop.png)
 
+### Loading...
+![](public/GIF/Spinner.gif)
+
+### Crispy Border
+![](public/GIF/Moving%20Border.gif)
+
 ---
 
 ## BootStrap Arena
@@ -24,7 +30,7 @@ Create and Destroy
 **Clone**
 ![](./public/GIF/Clone.gif)
 
-**Todos**
+*Todos*
 - [ ] Create the floating login modal
 - [ ] Create the floating signup modal
 - [ ] Create the typing text animation
