@@ -1,0 +1,131 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    background-color: #111111;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    width: 100%;
+}
+.container .ring{
+    margin: -30px;
+    
+    border: 4px solid transparent;
+    border-radius: 50%;
+    border-top: 4px solid #24ecff;
+    
+    position: relative;
+    
+    width: 150px;
+    height: 150px;
+
+    animation-name: animate;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.container .ring::before{
+    content: "";
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 12px;
+    right:12px;
+    
+    width: 15px;
+    height: 15px;
+    
+    background-color: #24ecff;
+    
+    box-shadow: 0 0 0 5px #24ecff33, 
+                0 0 0 10px #24ecff22, 
+                0 0 0 20px #24ecff11;
+}
+.container .ring:nth-child(2)::before{
+    content: "";
+
+    border-radius: 50%;
+    
+    position: absolute;
+    top: initial;
+    bottom: 12px;
+    left: 12px;
+    
+    width: 15px;
+    height: 15px;
+    
+    background-color: #93ff2d;
+    
+    box-shadow: 0 0 0 5px #93ff2d33, 
+                0 0 0 10px #93ff2d22, 
+                0 0 0 20px #93ff2d11;
+}
+.container .ring:nth-child(3)::before{
+    content: "";
+    
+    border-radius: 50%;
+    
+    position: absolute;
+    top: initial;
+    bottom: 12px;
+    left: 12px;
+    
+    width: 15px;
+    height: 15px;
+    
+    background-color: #e41cf8;
+    
+    box-shadow: 0 0 0 5px #e41cf833, 
+                0 0 0 10px #e41cf822, 
+                0 0 0 20px #e41cf811;
+}
+
+.container .ring:nth-child(3){
+    border-top: 4px solid transparent;
+    border-left: 4px solid #e41cf8;
+    
+    position: absolute;
+    top: -66.66px;
+    
+    animation-name: animate2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -3s;
+}
+.container .ring:nth-child(2){
+    border-top: 4px solid transparent;
+    border-left: 4px solid #93ff2d;
+    
+    animation-name: animate2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -1s;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate2 {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
