@@ -1,0 +1,14 @@
+:root{
+    --navbar-height: 5.6rem;
+    --navbar-bg-color: #343a40;
+    
+    --action-height: 3.8rem;
+    
+    --search-bar-color: #495057;
+
+    --jumbotron-bg-color: #e9ecef;
+
+    --btn-red-bg-color: #dc3545;
+    --btn-red-hover-bg-color: #c82333;
+    --btn-red-font-size: 1.5rem;
+}
