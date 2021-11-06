@@ -9,8 +9,22 @@
     --jumbotron-bg-color: #e9ecef;
     --jumbotron-logo-width: 80%;
     --jumbotron-text-color: #6c757d;
+    
+    --btn-font-size: 1.5rem;
+    --btn-shadow-offset-x: 0;
+    --btn-shadow-offset-y: 0;
+    --btn-shadow-blur-radius: 3px;
+    --btn-shadow-spread-radius: 4px;
+    --btn-transition-duration: 0.15s;
+    --btn-transition-timing-function: ease-in-out;
 
     --btn-red-bg-color: #dc3545;
     --btn-red-hover-bg-color: #c82333;
-    --btn-font-size: 1.5rem;
+    --btn-red-focus-bg-color: #f5727f;
+    --btn-green-bg-color: #28a745;
+    --btn-green-hover-bg-color: #218838;
+    --btn-green-focus-bg-color: #93e0a5;
+    --btn-blue-bg-color: #007bff;
+    --btn-blue-hover-bg-color: #0069d9;
+    --btn-blue-focus-bg-color: #7eabdb;
 }
