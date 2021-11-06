@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .btn{
     height: var(--action-height);
     
@@ -19,4 +20,17 @@
     font-size: var(--btn-font-size);
 
     color: white;
+}
+
+.btn-red{
+    background-color: var(--btn-red-bg-color);
+}
+.btn-red:hover{
+    background: var(--btn-red-hover-bg-color);
+    transition-duration: var(--btn-transition-duration);
+    transition-timing-function: var(--btn-transition-timing-function);
+}
+.btn-red:focus{
+    background-color: var(--btn-red-hover-bg-color);
+    box-shadow: 0 0 3px 4px var(--btn-red-bg-color);
 }
