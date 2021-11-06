@@ -20,11 +20,166 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/modal.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./public/assets/icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
+
+    <!-- MODALS -->
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title text-center">
+                        <p><img src="./public/assets/images/googleLogin.png" alt=""></p>
+                        <p>or</p>
+                        <p>Login via username</p>
+                    </h5>
+                </div>
+                
+                <div class="modal-body">
+                    <form method = "POST">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" minlength="1" class="form-control" id="username" placeholder="Enter your username">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="text" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+                        
+                        <button type="submit" class = "btn btn-danger my-3">Login</button>
+                        
+                        <br>
+                        
+                        <span data-bs-target="#forgot-password-modal" data-bs-toggle="modal" class="text-decoration-underline">Forgot Password?</span>
+                    </form>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title text-center">
+                        <p><img src="./public/assets/images/googleSignUp.png" alt=""></p>
+                        <p>or</p>
+                        <p>SignUp for an account</p>
+                    </h5>
+                </div>
+                
+                <div class="modal-body">
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="s-username" class="form-label">Username</label>
+                            <input type="text" minlength="4" maxlength="10" class="form-control" id="s-username" placeholder="Enter your username">
+                            <small class="form-text text-muted px-1">Your unique username must 4 - 10 characters (only lowecase letters, numbers & underscores allowed) with no space</small>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your Name">
+                        </div>                        
+                        
+                        <div class="mb-3">
+                            <label for="s-email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="s-email" placeholder="Enter your Email">
+                        </div>    
+                        
+                        <button class="btn btn-danger my-1">Send OTP</button>
+                        
+                        <div class="mb-3">
+                            <label for="s-otp" class="form-label">Enter OTP</label>
+                            <input type="number" class="form-control" id="s-otp" placeholder="Enter OTP">
+                        </div>    
+                        
+                        <div class="mb-3">
+                            <label for="s-password" class="form-label">Choose a password (At least 4 characters)</label>
+                            <input type="text" minlength="4" class="form-control" id="s-password" placeholder="Choose a password">
+                        </div>    
+                        
+                        <div class="mb-3">
+                            <label for="s-retype-password" class="form-label">Retype your password</label>
+                            <input type="text" class="form-control" id="s-retype-password" placeholder="Retype your password">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-danger">SignUp</button>
+                    </form>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div id="forgot-password-modal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title text-center">
+                        <p><img src="./public/assets/images/googleLogin.png" alt=""></p>
+                        <p>or</p>
+                        <p>Recover forgot password</p>
+                    </h5>
+                </div>
+                
+                <div class="modal-body">
+                    <form method = "POST">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+                        </div>
+                        
+                        <button class="btn btn-danger">Send OTP</button>
+                        
+                        <div class="mb-3 my-3">
+                            <label for="otp" class="form-label">Enter OTP</label>
+                            <input type="number" class="form-control" id="otp" placeholder="Enter your OTP">
+                        </div>
+                        
+                        <div class="mb-3 my-3">
+                            <label for="f-password" class="form-label">Choose a password</label>
+                            <input type="password" class="form-control" id="f-password" placeholder="Choose a password">
+                        </div>
+                        
+                        <div class="mb-3 my-3">
+                            <label for="retype-password" class="form-label">Retype your password</label>
+                            <input type="password" class="form-control" id="retype-password" placeholder="Retype your password">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-danger my-3">Reset Password</button>
+                        
+                        <br>
+                        
+                        <span class="text-decoration-underline" data-bs-target="#login-form" data-bs-toggle="modal">Login Using Credentials</span>
+                    </form>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
