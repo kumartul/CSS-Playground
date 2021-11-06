@@ -1,0 +1,19 @@
+/* Modal Header */
+.modal-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Header (Login With Google Image) */
+.modal-header img{
+    height: 42.75px;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Form links */
+form span{
+    cursor: pointer;
+}
