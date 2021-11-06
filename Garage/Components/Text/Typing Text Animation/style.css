@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+html{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #343f4f;
+}
+.wrapper{
+    display: inline-flex;
+}
+.wrapper .static-text{
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+}
+.wrapper .dynamic-texts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.dynamic-texts li{
+    color: #fc6d6d;
+    font-size: 60px;
+    font-weight: 500;
+
+    position: relative;
+    top: 0;
+
+    animation-name: slide;
+    animation-duration: 6s;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+}
+.dynamic-texts li span{
+    position: relative;
+}
+.dynamic-texts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #fc6d6d;
+
+    background: #343f4f;
+
+    animation-name: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px - 35px;
+    }
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
