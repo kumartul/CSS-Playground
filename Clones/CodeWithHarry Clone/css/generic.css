@@ -21,16 +21,40 @@
 
     color: white;
 }
+.btn:hover{
+    transition-duration: var(--btn-transition-duration);
+    transition-timing-function: var(--btn-transition-timing-function);
+}
 
 .btn-red{
     background-color: var(--btn-red-bg-color);
 }
-.btn-red:hover{
-    background: var(--btn-red-hover-bg-color);
-    transition-duration: var(--btn-transition-duration);
-    transition-timing-function: var(--btn-transition-timing-function);
-}
+.btn-red:hover,
 .btn-red:focus{
     background-color: var(--btn-red-hover-bg-color);
-    box-shadow: 0 0 3px 4px var(--btn-red-bg-color);
+}
+.btn-red:focus{
+    box-shadow: var(--btn-shadow-offset-x) var(--btn-shadow-offset-y) var(--btn-shadow-blur-radius) var(--btn-shadow-spread-radius) var(--btn-red-focus-bg-color);
+}
+
+.btn-green
+{
+    background-color: var(--btn-green-bg-color);
+}
+.btn-green:hover,
+.btn-green:focus{
+    background-color: var(--btn-green-hover-bg-color);
+}
+.btn-green:focus{
+    box-shadow: var(--btn-shadow-offset-x) var(--btn-shadow-offset-y) var(--btn-shadow-blur-radius) var(--btn-shadow-spread-radius) var(--btn-green-focus-bg-color);
+}
+.btn-blue{
+    background-color: var(--btn-blue-bg-color);
+}
+.btn-blue:hover,
+.btn-blue:focus{
+    background-color: var(--btn-blue-hover-bg-color);
+}
+.btn-blue:focus{
+    box-shadow: var(--btn-shadow-offset-x) var(--btn-shadow-offset-y) var(--btn-shadow-blur-radius) var(--btn-shadow-spread-radius) var(--btn-blue-focus-bg-color);
 }
