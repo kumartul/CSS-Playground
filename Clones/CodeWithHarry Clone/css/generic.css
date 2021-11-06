@@ -3,3 +3,20 @@
     align-items: center;
     justify-content: center;
 }
+.btn{
+    height: var(--action-height);
+    
+    padding: 0.5rem 1rem;
+        
+    border: none;
+    border-radius: 0.5rem;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: var(--btn-font-size);
+
+    color: white;
+}
