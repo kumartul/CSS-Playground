@@ -20,11 +20,11 @@
 }
 
 /* Jumbotron Buttons */
-.jumbotron article:nth-child(3) p button:nth-child(2){
+.jumbotron article:nth-child(3) p a:nth-child(2) button{
     background: #28a745;
     border-color: #28a745;
 }
-.jumbotron article:nth-child(3) p button:nth-child(2):hover{
+.jumbotron article:nth-child(3) p a:nth-child(2) button:hover{
     background: #198754;
     border-color: #198754;
 }
