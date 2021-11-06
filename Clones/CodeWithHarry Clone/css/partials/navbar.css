@@ -72,35 +72,6 @@
     outline: #066de2;
 }
 
-/* Red Button */
-.navbar .action .btn-red{
-    height: var(--action-height);
-    
-    padding: 0.5rem 1rem;
-    
-    background-color: var(--btn-red-bg-color);
-    
-    border: none;
-    border-radius: 0.5rem;
-    
-    color: white;
-    
-    letter-spacing: 1px;
-    
-    font-weight: 400;
-    font-size: var(--btn-font-size);
-
-    cursor: pointer;
-}
-.navbar .action .btn-red:hover{
-    background: var(--btn-red-hover-bg-color);
-    transition: 0.25s;
-}
-.navbar .action .btn-red:focus{
-    background-color: var(--btn-red-hover-bg-color);
-    box-shadow: 0 0 3px 4px var(--btn-red-bg-color);
-}
-
 /* SignUp Button */
 .navbar .action .btn-container #signup-btn{
     margin-left: 0.5rem;
