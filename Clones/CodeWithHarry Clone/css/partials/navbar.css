@@ -88,7 +88,7 @@
     letter-spacing: 1px;
     
     font-weight: 400;
-    font-size: var(--btn-red-font-size);
+    font-size: var(--btn-font-size);
 
     cursor: pointer;
 }

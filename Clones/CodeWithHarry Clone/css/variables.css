@@ -7,8 +7,9 @@
     --search-bar-color: #495057;
 
     --jumbotron-bg-color: #e9ecef;
+    --jumbotron-logo-width: 80%;
 
     --btn-red-bg-color: #dc3545;
     --btn-red-hover-bg-color: #c82333;
-    --btn-red-font-size: 1.5rem;
+    --btn-font-size: 1.5rem;
 }
