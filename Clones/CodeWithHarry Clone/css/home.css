@@ -1,0 +1,32 @@
+@import url(../generic.css);
+@import url(../variables.css);
+
+.jumbotron{
+    background-color: var(--jumbotron-bg-color);   
+    
+    padding: 6rem;
+    flex-direction: column;
+}
+.jumbotron .logo img{
+    width: var(--jumbotron-logo-width);
+}
+.jumbotron .text{
+    color: var(--jumbotron-text-color);
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+
+    flex-direction: column;
+}
+.jumbotron .text p:first-child{
+    margin-bottom: 0.5rem;
+}
+.jumbotron .text p:last-child{
+    margin-bottom: 2rem;
+}
+.jumbotron .btn-container{
+    margin-bottom: 5rem;
+}
+.jumbotron .btn-container button{
+    margin-left: 0.5rem;
+}
