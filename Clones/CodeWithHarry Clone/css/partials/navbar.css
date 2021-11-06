@@ -1,0 +1,125 @@
+:root{
+    --navbar-height: 5.6rem;
+    --navbar-bg-color: #343a40;
+    
+    --action-height: 3.8rem;
+    
+    --search-bar-color: #495057;
+    
+    --btn-red-bg-color: #dc3545;
+    --btn-red-hover-bg-color: #c82333;
+    --btn-red-font-size: 1.5rem;
+}
+
+/* Some elements with common styling */
+.content-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navbar */
+.navbar{
+    width: 100%;
+    height: var(--navbar-height);
+
+    background-color: var(--navbar-bg-color);
+    
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar Logo */
+.navbar #logo{
+    width: 3.9rem;
+    height: 3.9rem;
+
+    margin-left: 2.9rem;
+}
+
+/* Navbar links list */
+.navbar .links{
+    margin-left: 2rem;
+}
+
+/* Navbar links */
+.navbar .links li a{
+    color: white;
+    
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.navbar .links li a:hover{
+    color: hsla(0,0%,100%,.75);
+}
+.navbar .links li:not(:nth-child(1)){   /* All the LIs except the first one */
+    margin-left: 1.75rem;
+}
+
+/* Action group */
+.navbar .action{
+    position: absolute;
+    right: 0;
+    bottom: auto;
+}
+
+/* Form control */
+.navbar .action .form-control{
+    margin-right: 1.5rem;
+}
+
+/* Search bar */
+.navbar .action .form-control #search-bar{
+    height: var(--action-height);
+    
+    border-radius: 0.5rem;
+    border: none;
+    
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    
+    color: var(--search-bar-color);
+    
+    font-size: 1.6rem;
+    
+    caret-color: var(--search-bar-color);
+}
+.navbar .action .form-control #search-bar:focus{
+    box-shadow: 0 0 2px 2px #0082e6;
+    outline: #066de2;
+}
+
+/* Red Button */
+.navbar .action .btn-red{
+    height: var(--action-height);
+    
+    padding: 0.5rem 1rem;
+    
+    background-color: var(--btn-red-bg-color);
+    
+    border: none;
+    border-radius: 0.5rem;
+    
+    color: white;
+    
+    letter-spacing: 1px;
+    
+    font-weight: 400;
+    font-size: var(--btn-red-font-size);
+
+    cursor: pointer;
+}
+.navbar .action .btn-red:hover{
+    background: var(--btn-red-hover-bg-color);
+    transition: 0.25s;
+}
+.navbar .action .btn-red:focus{
+    background-color: var(--btn-red-hover-bg-color);
+    box-shadow: 0 0 3px 4px var(--btn-red-bg-color);
+}
+
+/* SignUp Button */
+.navbar .action .btn-container #signup-btn{
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}

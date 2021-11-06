@@ -24,20 +24,22 @@
 
     <!-- Navbar -->
     <nav class="navbar">
-        <img src="./public/assets/images/logo.png" alt="">
-        <ul class="links">
+        <img id = "logo" src="./public/assets/images/logo.png" alt="CodeWithHarry Logo">
+        <ul class="links content-center">
             <li><a href="index.html">Home</a></li>
             <li><a href="video.html">Videos</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact Me</a></li>
         </ul>
-        <form class = "form-control" method = "GET">
-            <input type="text" name="search-bar" id="search-bar" placeholder="Search">
-            <button type="submit" id = "search-btn">Search</button>
-        </form>
-        <div class="btn-container">
-            <button>Login</button>
-            <button>SignUp</button>
+        <div class="action content-center">
+            <form class = "form-control" method = "GET">
+                <input type="text" name="search" id="search-bar" placeholder="Search">
+                <button class = "btn-red" type="submit" id = "search-btn">Search</button>
+            </form>
+            <div class="btn-container">
+                <button class = "btn-red" id = "#login-btn">Login</button>
+                <button class = "btn-red" id = "signup-btn">SignUp</button>
+            </div>
         </div>
     </nav>
 </body>
