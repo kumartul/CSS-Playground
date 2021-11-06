@@ -12,22 +12,28 @@ body{
 
     background: #343f4f;
 }
+
 .wrapper{
     display: inline-flex;
 }
 .wrapper .static-text{
     color: white;
+
     font-size: 60px;
     font-weight: 400;
 }
 .wrapper .dynamic-texts{
     margin-left: 15px;
+
     height: 90px;
     line-height: 90px;
+    
     overflow: hidden;
 }
+
 .dynamic-texts li{
     color: #fc6d6d;
+    
     font-size: 60px;
     font-weight: 500;
 
@@ -44,12 +50,15 @@ body{
 }
 .dynamic-texts li span::after{
     content: "";
+    
+    border-left: 2px solid #fc6d6d;
+    
     position: absolute;
     left: 0;
+    
     height: 100%;
     width: 100%;
-    border-left: 2px solid #fc6d6d;
-
+    
     background: #343f4f;
 
     animation-name: typing;
