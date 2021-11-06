@@ -18,6 +18,9 @@ Create and Destroy
 ### Crispy Border
 ![](public/GIF/Moving%20Border.gif)
 
+### Let's Type!!!
+![](public/GIF/Typing.gif)
+
 ---
 
 ## BootStrap Arena
