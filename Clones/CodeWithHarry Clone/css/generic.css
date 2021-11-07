@@ -95,5 +95,6 @@
     color: var(--card-header-color);
 }
 .card button{
-    width: calc(var(--card-width) - var(--card-padding)*2)
+    width: calc(var(--card-width) - var(--card-padding)*2);
+    margin-bottom: 1.5rem;
 }
