@@ -60,6 +60,17 @@
     box-shadow: var(--btn-shadow-offset-x) var(--btn-shadow-offset-y) var(--btn-shadow-blur-radius) var(--btn-shadow-spread-radius) var(--btn-blue-focus-bg-color);
 }
 
+.btn-grey{
+    background-color: var(--btn-grey-bg-color);
+}
+.btn-grey:hover,
+.btn-grey:focus{
+    background-color: var(--btn-grey-hover-bg-color);
+}
+.btn-grey:focus{
+    box-shadow: var(--btn-shadow-offset-x) var(--btn-shadow-offset-y) var(--btn-shadow-blur-radius) var(--btn-shadow-spread-radius) var(--btn-grey-focus-bg-color);
+}
+
 .card{
     flex-direction: column;
     
@@ -100,7 +111,7 @@
 }
 
 .backdrop{
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.5);
     
     position: absolute;
     top: 0;
@@ -109,10 +120,87 @@
     height: 100vh;
     width: 98.75vw;
     
-    opacity: 0;
-    display: none;
+    /* opacity: 0;
+    display: none; */
+
+    position: fixed;
 
     z-index: 2; /* Render the backdrop on top of everything expect modals */
 
     transition: opacity .15s linear;
+}
+
+.modal{
+    position: absolute;
+    top: calc(var(--navbar-height)/2);
+    left: 30vw;
+
+    border-radius: var(--modal-border-radius);
+    border: 1px solid var(--modal-border-color);
+    
+    z-index: 3; /* Render the modal on top of everything */
+    
+    width: var(--modal-width);
+    
+    background-color: white;
+}
+.modal .modal-header{
+    flex-direction: column;   
+    
+    padding: 1.5rem;
+}
+.modal .modal-header .close-btn{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    
+    font-size: 2.5rem;
+    
+    color: grey;
+    
+    cursor: pointer;
+}
+.modal .modal-header .close-btn:hover{
+    color: black;
+}
+.modal .modal-header img{
+    width: 18.4vw;
+    
+    margin-top: 1.6rem;
+    
+    border: 1px solid black;
+    border-radius: var(--modal-border-radius);
+}
+.modal .form .form-group{
+    padding: 2rem;
+}
+.modal .form .form-group label{
+    font-size: 1.5rem;
+}
+.modal .form .form-group input{
+    width: 100%;
+    
+    border: 1px solid lightgrey;
+    border-radius: 0.5rem;
+    
+    padding: 1rem;
+    
+    font-size: 1.6rem;
+    
+    color: var(--modal-input-color);
+    
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+.modal .form .form-group button{
+    margin-bottom: 2rem;
+}
+.modal .form .form-group span{
+    text-decoration: underline;
+    
+    font-size: 1.5rem;
+}
+.modal .form hr{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
