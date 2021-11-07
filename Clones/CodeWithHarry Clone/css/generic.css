@@ -120,8 +120,8 @@
     height: 100vh;
     width: 98.75vw;
     
-    /* opacity: 0;
-    display: none; */
+    opacity: 0;
+    display: none;
 
     position: fixed;
 
@@ -143,6 +143,8 @@
     width: var(--modal-width);
     
     background-color: white;
+
+    display: none;  /* The display will be set to flex as soon as the user clicks on the login button */
 }
 .modal .modal-header{
     flex-direction: column;   
