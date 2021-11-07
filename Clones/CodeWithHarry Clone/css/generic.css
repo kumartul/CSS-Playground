@@ -62,26 +62,36 @@
 
 .card{
     flex-direction: column;
+    
     width: var(--card-width);
+    
     border: 1px solid var(--card-border-color);
-    padding: var(--card-padding);
     border-radius: var(--card-img-border-radius);
+    
+    padding: var(--card-padding);
+    
     text-align: center;
 }
 .card img{
     width: 100%;
+    
     border-radius: var(--card-img-border-radius);
+    
     margin-bottom: 1rem;
 }
 .card header{
     margin-bottom: 1.2rem;
+    
     font-size: 2rem;
     font-weight:lighter;
+    
     color: var(--card-header-color);
 }
 .card p{
     margin-bottom: 1.6rem;
+    
     font-size: 1.65rem;
+    
     color: var(--card-header-color);
 }
 .card button{
