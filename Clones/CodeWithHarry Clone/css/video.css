@@ -1,0 +1,6 @@
+@import url(./generic.css);
+@import url(./variables.css);
+
+.video-cards{
+    flex-wrap: wrap;
+}

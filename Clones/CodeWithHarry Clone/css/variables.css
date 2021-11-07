@@ -30,6 +30,7 @@
     --btn-grey-bg-color: #6c757d;
     --btn-grey-hover-bg-color: #5a6268;
     --btn-grey-focus-bg-color: #adb8c2;
+    --btn-outline-red-color: var(--btn-red-bg-color);
 
     --card-width: 28.8rem;
     --card-padding: 1rem;
@@ -41,4 +42,7 @@
     --modal-width: 40vw;
     --modal-border-color: #4a4a4a;
     --modal-input-color: #495057;
+
+    --video-card-img-width: 140px;
+    --video-card-img-height: 140px;
 }

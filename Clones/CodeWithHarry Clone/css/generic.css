@@ -226,7 +226,8 @@
 .video-card{
     flex-direction: column;
     text-align: center;
-    max-width: 33%;
+    width: 30vw;
+    margin: 1rem;
 }
 .video-card img{
     height: var(--video-card-img-height);
