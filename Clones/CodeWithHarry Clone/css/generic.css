@@ -127,7 +127,7 @@
 
     z-index: 2; /* Render the backdrop on top of everything expect modals */
 
-    transition: opacity .15s linear;
+    transition: all .15s linear;
 }
 
 .modal{
@@ -144,7 +144,7 @@
     
     background-color: white;
 
-    display: none;  /* The display will be set to flex as soon as the user clicks on the login button */
+    display: none;  /* The display will be set to block as soon as the user clicks on the login button */
 }
 .modal .modal-header{
     flex-direction: column;   
