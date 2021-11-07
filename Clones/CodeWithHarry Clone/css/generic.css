@@ -98,3 +98,21 @@
     width: calc(var(--card-width) - var(--card-padding)*2);
     margin-bottom: 1.5rem;
 }
+
+.backdrop{
+    background: rgba(0, 0, 0, 0.25);
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    height: 100vh;
+    width: 98.75vw;
+    
+    opacity: 0;
+    display: none;
+
+    z-index: 2; /* Render the backdrop on top of everything expect modals */
+
+    transition: opacity .15s linear;
+}
