@@ -27,10 +27,18 @@
     --btn-blue-bg-color: #007bff;
     --btn-blue-hover-bg-color: #0069d9;
     --btn-blue-focus-bg-color: #7eabdb;
+    --btn-grey-bg-color: #6c757d;
+    --btn-grey-hover-bg-color: #5a6268;
+    --btn-grey-focus-bg-color: #adb8c2;
 
     --card-width: 28.8rem;
     --card-padding: 1rem;
     --card-border-color: rgba(0, 0, 0, 0.125);
     --card-header-color: #212529;
     --card-img-border-radius: 3px;
+
+    --modal-border-radius: 3px;
+    --modal-width: 40vw;
+    --modal-border-color: #4a4a4a;
+    --modal-input-color: #495057;
 }
