@@ -71,6 +71,18 @@
     box-shadow: var(--btn-shadow-offset-x) var(--btn-shadow-offset-y) var(--btn-shadow-blur-radius) var(--btn-shadow-spread-radius) var(--btn-grey-focus-bg-color);
 }
 
+.btn-outline-red{
+    border: 1px solid var(--btn-outline-red-color);
+    
+    color: var(--btn-outline-red-color);
+    
+    background-color: transparent;
+}
+.btn-outline-red:hover{
+    background-color: var(--btn-outline-red-color);
+    color: white;
+}
+
 .card{
     flex-direction: column;
     
@@ -209,4 +221,23 @@
 .modal .form hr{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+.video-card{
+    flex-direction: column;
+    text-align: center;
+    max-width: 33%;
+}
+.video-card img{
+    height: var(--video-card-img-height);
+    width: var(--video-card-img-width);
+    border-radius: 50%;
+}
+.video-card h1{
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+.video-card p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
