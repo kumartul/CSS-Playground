@@ -132,8 +132,8 @@
 
 .modal{
     position: absolute;
-    top: calc(var(--navbar-height)/2);
-    left: 30vw;
+    top: -200%;
+    left: calc((100vw - calc(var(--modal-width)))/2);   /* (100vw - width of modal)/2 */
 
     border-radius: var(--modal-border-radius);
     border: 1px solid var(--modal-border-color);
@@ -145,6 +145,8 @@
     background-color: white;
 
     display: none;  /* The display will be set to block as soon as the user clicks on the login button */
+
+    transition: all 0.5s ease-out;
 }
 .modal .modal-header{
     flex-direction: column;   

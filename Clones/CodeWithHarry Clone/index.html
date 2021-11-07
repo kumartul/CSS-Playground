@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="./css/partials/footer.css" type = "text/css">
     <link rel="stylesheet" href="./css/partials/modal.css" type = "text/css">
 
+    <!-- Custom JavaScript -->
+    <script src="./js/modal.js" defer></script>
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="./public/assets/icons/favicon.ico" type="image/x-icon">
 </head>
@@ -35,25 +38,106 @@
             <img src="./public/assets/images/googleLogin.png" alt="Login with Google">
             <h1>or</h1>
             <h1>Login Via Username</h1>
-            <div class="close-btn">&Cross;</div>
+            
+            <div class="close-btn">
+                <span>&Cross;</span>
+            </div>
         </div>
+
         <hr>
+        
         <div class="form">
             <form method = "POST" class="form-group">
                 <label for="login-username">Username</label>
                 <br>
                 <input type="text" name="username" id="login-username" placeholder="Enter your username">
+                
                 <br>
+                
                 <label for="login-password">Password</label>
                 <br>
                 <input type="text" name="password" id="login-password" placeholder="Enter your password">
+                
                 <br>
+                
                 <button class="btn btn-red">Login</button>
+                
                 <br>
+
                 <span>Forgot Password?</span>
             </form>
+
             <hr>
-            <button class="btn btn-grey">Close</button>
+
+            <div class="close-btn">
+                <button class="btn btn-grey">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal signup-modal">
+        <div class="modal-header content-center">
+            <img src="./public/assets/images/googleSignUp.png" alt="SignUp with Google">
+            <h1>or</h1>
+            <h1>SignUp for an account</h1>
+            
+            <div class="close-btn">
+                <span>&Cross;</span>
+            </div>
+        </div>
+
+        <hr>
+        
+        <div class="form">
+            <form method = "POST" class="form-group">
+                <label for="login-username">Username</label>
+                <br>
+                <input minlength="4" maxlength="10" type="text" name="username" id="login-username" placeholder="Enter your username">
+                <small>Your unique username must 4 - 10 characters (only lowecase letters, numbers & underscores allowed) with no spaces</small>
+                
+                <br>
+
+                <label for="signup-name">Name</label>
+                <br>
+                <input type="text" name="name" id="signup-name" placeholder="Enter your name">
+
+                <br>
+                
+                <label for="signup-email">Your Email</label>
+                <br>
+                <input type="email" name="email" id="signup-email" placeholder="Enter your email">
+
+                <br>
+
+                <button class="btn btn-red">Send OTP</button>
+
+                <br>
+
+                <label for="signup-otp">Enter OTP</label>
+                <br>
+                <input type="number" name="otp" id="signup-otp" placeholder="Enter OTP">
+
+                <label for="signup-password">Choose a password (At least 4 characters)</label>
+                <br>
+                <input type="text" name="password" id="signup-password" placeholder="Choose a password">
+                
+                <br>
+                
+                <label for="signup-retype-password">Retype your password</label>
+                <br>
+                <input type="text" name="password" id="signup-retype-password" placeholder="Retype your password">
+                
+                <br>
+
+                <button class="btn btn-red">SignUp</button>
+            </form>
+
+            <hr>
+            
+            <div class="close-btn">
+                <button class="btn btn-grey">Close</button>
+            </div>
         </div>
     </div>
 
@@ -72,7 +156,7 @@
                 <button class = "btn btn-red" type="submit" id = "search-btn">Search</button>
             </form>
             <div class="btn-container">
-                <button class = "btn btn-red" id = "#login-btn">Login</button>
+                <button class = "btn btn-red" id = "login-btn">Login</button>
                 <button class = "btn btn-red" id = "signup-btn">SignUp</button>
             </div>
         </div>
