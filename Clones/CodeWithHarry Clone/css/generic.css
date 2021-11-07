@@ -242,3 +242,22 @@
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
+
+.blog-card a{
+    color: #343a40;
+    
+    font-weight: bold;
+}
+.blog-card a:hover{
+    color: black;
+    
+    text-decoration: underline;
+}
+.blog-card header{
+    margin-bottom: 0.75rem;
+}
+.blog-card p{
+    font-size: 1.5rem;
+    
+    margin-bottom: 1.5rem;
+}

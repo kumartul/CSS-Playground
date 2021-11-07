@@ -1,0 +1,22 @@
+@import url(./generic.css);
+@import url(./variables.css);
+
+main{
+    width: 80%;
+    
+    margin: 3rem auto;
+}
+main h1{
+    font-size: 3rem;
+    font-weight: 400;
+}
+main h1 span{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+main hr{
+    margin: 2rem 0;
+}
+.btn-container .btn:last-child{
+    float: right;
+}
