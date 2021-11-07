@@ -1,12 +1,13 @@
 const backdrop = document.querySelector('.backdrop');
 
 const loginModal = document.querySelector('.login-modal');
-const loginBtn = document.getElementById('login-btn');
-
 const signUpModal = document.querySelector('.signup-modal');
-const signUpBtn = document.getElementById('signup-btn');
+const forgotPasswordModal = document.querySelector('.forgot-password-modal');
 
-// const forgotPasswordM
+const forgotPasswordBtn = loginModal.querySelectorAll('span')[1];
+const loginBtn = document.getElementById('login-btn');
+const loginBtn2 = forgotPasswordModal.querySelectorAll('span')[1];
+const signUpBtn = document.getElementById('signup-btn');
 
 const closeBtns = document.querySelectorAll('.close-btn');
 
@@ -14,6 +15,7 @@ const closeBtns = document.querySelectorAll('.close-btn');
 const closeAllModals = () => {
     loginModal.style.display = "none";
     signUpModal.style.display = "none";
+    forgotPasswordModal.style.display = "none";
 }
 
 // Function: Hides the backdrop
@@ -31,13 +33,22 @@ const showBackdrop = () => {
 // Function: Displays a modal
 const displayModal = modal => {
     showBackdrop();
+    closeAllModals();
     switch(modal){
         case "signup":
             signUpModal.style.display = "block";
             signUpModal.style.top = "calc(var(--navbar-height)/2)";
+            break;
         case "login":
             loginModal.style.display = "block";
             loginModal.style.top = "calc(var(--navbar-height)/2)"; 
+            break;
+        case "forgotPassword":
+            forgotPasswordModal.style.display = "block";
+            forgotPasswordModal.style.top = "calc(var(--navbar-height)/2)";
+            break;
+        default:
+            throw new Error("Invalid Modal!!!");
     }
 }
 
@@ -53,8 +64,16 @@ loginBtn.addEventListener('click', () => {
     displayModal("login");
 });
 
+loginBtn2.addEventListener('click', () => {
+    displayModal("login");
+});
+
 signUpBtn.addEventListener('click', () => {
     displayModal("signup");
+});
+
+forgotPasswordBtn.addEventListener('click', () => {
+    displayModal("forgotPassword");
 });
 
 backdrop.addEventListener('click', () => {

@@ -141,6 +141,63 @@
         </div>
     </div>
 
+    <!-- Forgot Password Modal -->
+    <div class="modal forgot-password-modal">
+        <div class="modal-header content-center">
+            <img src="./public/assets/images/googleLogin.png" alt="Login with Google">
+            <h1>or</h1>
+            <h1>Recover forgot password</h1>
+            
+            <div class="close-btn">
+                <span>&Cross;</span>
+            </div>
+        </div>
+
+        <hr>
+        
+        <div class="form">
+            <form method = "POST" class="form-group">
+                <label for="forgot-passsword-email">Your Email</label>
+                <br>
+                <input type="email" name="username" id="forgot-passsword-email" placeholder="Enter your Email">                
+                
+                <br>
+
+                <button class="btn btn-red">Send OTP</button>
+
+                <br>
+
+                <label for="forgot-password-otp">Enter OTP</label>
+                <br>
+                <input type="number" name="otp" id="forgot-password-otp" placeholder="Enter OTP">
+
+                <label for="forgot-password-password">Choose a password</label>
+                <br>
+                <input type="text" name="password" id="forgot-password-password" placeholder="Choose a password">
+                
+                <br>
+                
+                <label for="forgot-password-retype-password">Retype your password</label>
+                <br>
+                <input type="text" name="password" id="forgot-password-retype-password" placeholder="Retype your password">
+                
+                <br>
+
+                <button class="btn btn-red">Reset Password</button>
+
+                <br>
+
+                <span>Login Using Credentials?</span>
+            </form>
+
+            <hr>
+            
+            <div class="close-btn">
+                <button class="btn btn-grey">Close</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar">
         <img id = "logo" src="./public/assets/images/logo.png" alt="CodeWithHarry Logo">
