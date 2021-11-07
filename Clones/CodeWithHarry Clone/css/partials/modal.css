@@ -3,3 +3,10 @@
     margin-right: 1rem;
     float: right;
 }
+small{
+    color: grey;
+    font-size: 1.25rem;
+}
+.signup-modal .form .form-group #login-username{
+    margin-bottom: 0.5rem !important;
+}
