@@ -1,0 +1,13 @@
+@import url(../generic.css);
+@import url(../variables.css);
+
+.footer{
+    background: var(--navbar-bg-color);
+    
+    color: white;
+    
+    font-size: 1.6rem;
+    font-weight: 300;
+    
+    padding: 1.9rem;
+}
