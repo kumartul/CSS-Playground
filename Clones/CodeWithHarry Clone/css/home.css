@@ -30,3 +30,9 @@
 .jumbotron .btn-container button{
     margin-left: 0.5rem;
 }
+
+.cards{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    justify-content: space-evenly !important;   /* Override the value of the generic content-center */
+}
