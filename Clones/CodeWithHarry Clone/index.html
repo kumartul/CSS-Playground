@@ -11,11 +11,11 @@
     <title>Home - CodeWithHarry</title>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/partials/navbar.css">
-    <link rel="stylesheet" href="./css/partials/footer.css">
-    <link rel="stylesheet" href="./css/partials/modal.css">
+    <link rel="stylesheet" href="./css/style.css" type = "text/css">
+    <link rel="stylesheet" href="./css/home.css" type = "text/css">
+    <link rel="stylesheet" href="./css/partials/navbar.css" type = "text/css">
+    <link rel="stylesheet" href="./css/partials/footer.css" type = "text/css">
+    <link rel="stylesheet" href="./css/partials/modal.css" type = "text/css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./public/assets/icons/favicon.ico" type="image/x-icon">
@@ -26,6 +26,35 @@
     <!-- This backdrop will be activated when the user activates the modal -->
     <div class="backdrop">
 
+    </div>
+
+    <!-- MODALS -->
+    <!-- Login Modal -->
+    <div class="modal login-modal">
+        <div class="modal-header content-center">
+            <img src="./public/assets/images/googleLogin.png" alt="Login with Google">
+            <h1>or</h1>
+            <h1>Login Via Username</h1>
+            <div class="close-btn">&Cross;</div>
+        </div>
+        <hr>
+        <div class="form">
+            <form method = "POST" class="form-group">
+                <label for="login-username">Username</label>
+                <br>
+                <input type="text" name="username" id="login-username" placeholder="Enter your username">
+                <br>
+                <label for="login-password">Password</label>
+                <br>
+                <input type="text" name="password" id="login-password" placeholder="Enter your password">
+                <br>
+                <button class="btn btn-red">Login</button>
+                <br>
+                <span>Forgot Password?</span>
+            </form>
+            <hr>
+            <button class="btn btn-grey">Close</button>
+        </div>
     </div>
 
     <!-- Navbar -->
