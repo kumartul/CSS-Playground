@@ -201,6 +201,8 @@
     text-decoration: underline;
     
     font-size: 1.5rem;
+
+    cursor: pointer;
 }
 .modal .form hr{
     margin-top: 1.5rem;
