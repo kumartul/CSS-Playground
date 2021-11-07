@@ -48,6 +48,7 @@
 .btn-green:focus{
     box-shadow: var(--btn-shadow-offset-x) var(--btn-shadow-offset-y) var(--btn-shadow-blur-radius) var(--btn-shadow-spread-radius) var(--btn-green-focus-bg-color);
 }
+
 .btn-blue{
     background-color: var(--btn-blue-bg-color);
 }
@@ -57,4 +58,32 @@
 }
 .btn-blue:focus{
     box-shadow: var(--btn-shadow-offset-x) var(--btn-shadow-offset-y) var(--btn-shadow-blur-radius) var(--btn-shadow-spread-radius) var(--btn-blue-focus-bg-color);
+}
+
+.card{
+    flex-direction: column;
+    width: var(--card-width);
+    border: 1px solid var(--card-border-color);
+    padding: var(--card-padding);
+    border-radius: var(--card-img-border-radius);
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    border-radius: var(--card-img-border-radius);
+    margin-bottom: 1rem;
+}
+.card header{
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+    font-weight:lighter;
+    color: var(--card-header-color);
+}
+.card p{
+    margin-bottom: 1.6rem;
+    font-size: 1.65rem;
+    color: var(--card-header-color);
+}
+.card button{
+    width: calc(var(--card-width) - var(--card-padding)*2)
 }
