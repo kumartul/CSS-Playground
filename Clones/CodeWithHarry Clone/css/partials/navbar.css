@@ -6,8 +6,10 @@
     width: 100%;
     height: var(--navbar-height);
 
-    background-color: var(--navbar-bg-color);
-    
+    background-color: var(--navbar-bg-color);    
+}
+.navbar,
+.navbar .main{
     display: flex;
     align-items: center;
 }
@@ -76,4 +78,63 @@
 .navbar .action .btn-container #signup-btn{
     margin-left: 0.5rem;
     margin-right: 1rem;
+}
+
+/* Responsiveness */
+.navbar .hamburger img{
+    width: 3rem;
+    
+    filter: invert(1);  /* This will convert the black hamburger to white */
+    
+    margin-right: 2rem;
+    
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    
+    display: none;  /* This will be set to block once the desired with is achieved */
+
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+
+    cursor: pointer;
+}
+
+@media screen and (max-width: 991px){
+    .navbar .hamburger img{
+        display: block;
+    }
+    .navbar,
+    .navbar .links,
+    .navbar .action{
+        display: block;
+        height: auto;
+    }
+    .navbar .action{
+        position: static;
+        margin-left: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    .navbar #logo{
+        margin-top: 1rem;
+    }
+    .navbar .links li{
+        margin: 2rem 0;
+    }
+    .navbar .links li:not(:first-of-type){  /* List Item that is not the first in the links list*/
+        margin-left: 0rem;
+    }
+    .navbar .action button,
+    .navbar .action input{
+        margin: 0.3rem;
+    }
+    .navbar .main{
+        display: none;  /* This will be set to block as soon as the user presses the hamburger button */
+    }
+}
+
+@media screen and (max-width: 575px){
+    .navbar .action input{
+        width: 100%;
+    }
 }

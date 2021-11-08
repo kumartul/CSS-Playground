@@ -19,6 +19,7 @@
 
     <!-- Custom JavaScript -->
     <script src="./js/modal.js" defer></script>
+    <script src="./js/navbar.js" defer></script>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./public/assets/icons/favicon.ico" type="image/x-icon">
@@ -201,21 +202,26 @@
     <!-- Navbar -->
     <nav class="navbar">
         <img id = "logo" src="./public/assets/images/logo.png" alt="CodeWithHarry Logo">
-        <ul class="links content-center">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="video.html">Videos</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
-        <div class="action content-center">
-            <form class = "form-control" method = "GET">
-                <input type="text" name="search" id="search-bar" placeholder="Search">
-                <button class = "btn btn-red" type="submit" id = "search-btn">Search</button>
-            </form>
-            <div class="btn-container">
-                <button class = "btn btn-red" id = "login-btn">Login</button>
-                <button class = "btn btn-red" id = "signup-btn">SignUp</button>
+        <div class="main">
+            <ul class="links content-center">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="video.html">Videos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+            <div class="action content-center">
+                <form class = "form-control" method = "GET">
+                    <input type="text" name="search" id="search-bar" placeholder="Search">
+                    <button class = "btn btn-red" type="submit" id = "search-btn">Search</button>
+                </form>
+                <div class="btn-container">
+                    <button class = "btn btn-red" id = "login-btn">Login</button>
+                    <button class = "btn btn-red" id = "signup-btn">SignUp</button>
+                </div>
             </div>
+        </div>
+        <div class="hamburger content-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" alt="Hamburger">
         </div>
     </nav>
 
