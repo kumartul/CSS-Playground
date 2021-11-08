@@ -1,10 +1,12 @@
 main{
     width: 80%;
+    
     margin: 3rem auto;
 }
 .form h1{
     font-size: 3rem;
     font-weight: 500;
+    
     margin-bottom: 0.5rem;
 }
 .form .form-group label{
@@ -13,15 +15,20 @@ main{
 .form .form-group input,
 .form .form-group textarea{
     width: 100%;
+    
     padding: 1rem;
-    border: 1px solid var(--card-border-color);
-    border-radius: 0.5rem;
-    font-size: 1.5rem;
-    color: var(--navbar-bg-color);
     margin-top: 0.75rem;
     margin-bottom: 2rem;
+    
+    border: 1px solid var(--card-border-color);
+    border-radius: 0.5rem;
+    
+    font-size: 1.5rem;
+    
+    color: var(--navbar-bg-color);
 }
 .form .form-group textarea{
     font-family: inherit;
+    
     height: 7rem;
 }
