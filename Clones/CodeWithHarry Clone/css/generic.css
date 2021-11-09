@@ -94,6 +94,8 @@
     padding: var(--card-padding);
     
     text-align: center;
+
+    margin: 1rem 0;
 }
 .card img{
     width: 100%;
