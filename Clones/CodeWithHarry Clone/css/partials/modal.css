@@ -10,3 +10,12 @@ small{
 .signup-modal .form .form-group #login-username{
     margin-bottom: 0.5rem !important;
 }
+
+/* Responsiveness */
+@media screen and (max-width: 520px) {
+    .modal{
+        width: 90%;
+        margin: auto;
+        left: 5vw;
+    }
+}
