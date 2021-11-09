@@ -12,9 +12,13 @@
 }
 .jumbotron .text{
     color: var(--jumbotron-text-color);
+    
     font-size: 1.75rem;
-    letter-spacing: 1px;
     font-weight: 300;
+    
+    letter-spacing: 1px;
+
+    text-align: center;
 
     flex-direction: column;
 }
@@ -26,15 +30,17 @@
 }
 .jumbotron .btn-container{
     margin-bottom: 5rem;
+    
     flex-wrap: wrap;
 }
 .jumbotron .btn-container button{
-    margin: 1rem 0.25rem;
+    margin: 0.5rem 0.25rem;
 }
 
 .cards{
     margin-top: 4rem;
     margin-bottom: 1rem;
-    justify-content: space-evenly !important;   /* Override the value of the generic content-center */
+    
     flex-wrap: wrap;    /* Cards will wrap them as per the width */
+    justify-content: space-evenly !important;   /* Override the value of the generic content-center */
 }
