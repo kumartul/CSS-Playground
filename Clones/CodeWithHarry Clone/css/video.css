@@ -4,3 +4,15 @@
 .video-cards{
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 991px){
+    .video-cards .video-card{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .video-cards .video-card{
+        width: 100%;
+    }
+}
