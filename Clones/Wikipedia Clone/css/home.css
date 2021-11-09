@@ -1,10 +1,29 @@
 @import url(./generic.css);
 @import url(./variables.css);
 
-body{
-    margin-top: 10rem;
+main{
+    user-select: none;
 }
 
+/* Text Logo */
+.text-logo{
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+.text-logo p{
+    font-size: 1.5rem;
+}
+
+/* Heading */
+.text-logo h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.text-logo h1 span{    /* Targeting the first and last character of the word 'WIKIPEDIA' */
+    font-size: 4rem;
+}
+
+/* Language Cards */
 .languages{
     position: relative;
 }
@@ -36,6 +55,7 @@ body{
     background: var(--language-card-hover-bg-color);
 }
 
+/* Indent the cards [A very tedious task] 😫*/
 .languages .language:nth-of-type(1){
     left: -32rem;
     top: -13rem;
