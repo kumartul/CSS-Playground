@@ -10,6 +10,9 @@
     <!-- Title -->
     <title>Wikipedia</title>
 
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/home.css">
@@ -84,6 +87,22 @@
                         <small>1 490 000+ haseł</small>
                     </div>
                 </div>
+            </article>
+
+            <article class="content-center flex-col">
+                <form class="form-group" method = "GET">
+                    <input type="text" name="topic" id="topic">
+                    
+                    <select name="language" id="language">
+                        <option value="Afrikaans">Afrikaans</option>
+                        <option value="EN" selected>EN</option>
+                        <option value="Latina">Latina</option>
+                        <option value="Magyar">Magyar</option>
+                        <option value="Polski">Polski</option>
+                    </select>
+                    
+                    <button class = "search-btn" type="submit"><i class="fa fa-search"></i></button>
+                </form>
             </article>
         </section>
     </main>

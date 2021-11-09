@@ -1,5 +1,11 @@
 :root{
-    --language-color: #36c;
+    --main-color: #36c;
+
     --language-article-color: #54595d;
     --language-card-hover-bg-color: #eaecf0;
+
+    --search-btn-hover-bg-color: #447ff5;
+
+    --input-border-color: #a2a9b1;
+    --input-hover-border-color: #72777d;
 }
