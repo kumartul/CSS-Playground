@@ -1,0 +1,78 @@
+@import url(./generic.css);
+@import url(./variables.css);
+
+body{
+    margin-top: 10rem;
+}
+
+.languages{
+    position: relative;
+}
+.languages .language{
+    position: absolute;
+    
+    min-width: 15rem;
+    
+    cursor: pointer;
+    
+    padding: 0.4rem;
+}
+.languages .language strong{
+    color: var(--language-color);
+    
+    font-size: 1.6rem;
+}
+.languages .language small{
+    color: var(--language-article-color);
+    
+    font-size: 1.3rem;
+    
+    line-height: 1.6;
+}
+.languages .language:hover > strong{
+    text-decoration: underline;
+}
+.languages .language:hover{
+    background: var(--language-card-hover-bg-color);
+}
+
+.languages .language:nth-of-type(1){
+    left: -32rem;
+    top: -13rem;
+}
+.languages .language:nth-of-type(2){
+    left: -37rem;
+    top: -7rem;
+}
+.languages .language:nth-of-type(3){
+    left: -39rem;
+    top: -1rem;
+}
+.languages .language:nth-of-type(4){
+    left: -35rem;
+    top: 5rem;
+}
+.languages .language:nth-of-type(5){
+    left: -29rem;
+    top: 12rem;
+}
+.languages .language:nth-of-type(6){
+    left: -3rem;
+    top: -13rem;
+}
+.languages .language:nth-of-type(7){
+    left: 2rem;
+    top: -7rem;
+}
+.languages .language:nth-of-type(8){
+    left: 4rem;
+    top: -1rem;
+}
+.languages .language:nth-of-type(9){
+    left: 3rem;
+    top: 5rem;
+}
+.languages .language:nth-of-type(10){
+    left: -5rem;
+    top: 12rem;
+}
