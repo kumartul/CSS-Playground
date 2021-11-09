@@ -44,3 +44,14 @@
     flex-wrap: wrap;    /* Cards will wrap them as per the width */
     justify-content: space-evenly !important;   /* Override the value of the generic content-center */
 }
+
+/* Responsiveness */
+@media screen and (max-width: 300px) {
+    .cards .card{
+        width: 90vw;
+    }
+    .cards .card button{
+        width: calc((100vw - 10vw) - (var(--card-padding)) * 2);
+        /* Card With - (Card Padding * 2) */
+    }
+}
