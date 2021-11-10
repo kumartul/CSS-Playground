@@ -97,17 +97,17 @@ main{
     top: 12rem;
 }
 
-main section:first-of-type article:nth-of-type(2){  /* Second article under the first section that is under <main> */
+main section article:nth-of-type(2){  /* Second article under the section that is under <main> */
     margin-bottom: 10rem;
 }
 
 /* Form */
-main section:first-of-type article:nth-of-type(3) .form-group{  /* Form with a class of form-group under the third article under the first section that is under <main> */
+main section article:nth-of-type(3) .form-group{  /* Form with a class of form-group under the third article under the section that is under <main> */
     position: relative;
 }
 
 /* Textbox */
-main section:first-of-type article:nth-of-type(3) .form-group input{    /* Textbox with a class of submit-btn under the form with a class of form-group under the third article under the first section that is under <main> */
+main section article:nth-of-type(3) .form-group input{    /* Textbox with a class of submit-btn under the form with a class of form-group under the third article under the section that is under <main> */
     height: 4.4rem;
     width: 40rem;
     
@@ -122,17 +122,17 @@ main section:first-of-type article:nth-of-type(3) .form-group input{    /* Textb
     
     transition: 0.1s ease;
 }
-main section:first-of-type article:nth-of-type(3) .form-group input:hover{
+main section article:nth-of-type(3) .form-group input:hover{
     border-color: var(--input-hover-border-color);
 }
-main section:first-of-type article:nth-of-type(3) .form-group input:focus{
+main section article:nth-of-type(3) .form-group input:focus{
     border-color: var(--main-color);
     
     box-shadow: inset 0 0 0 1px var(--main-color);
 }
 
 /* Search Button */
-main section:first-of-type article:nth-of-type(3) .form-group .search-btn{  /* Button with a class of submit-btn under the form with a class of form-group under the third article under the first section that is under <main> */
+main section article:nth-of-type(3) .form-group .search-btn{  /* Button with a class of submit-btn under the form with a class of form-group under the third article under the section that is under <main> */
     background-color: var(--main-color);
     
     color: white;
@@ -152,12 +152,12 @@ main section:first-of-type article:nth-of-type(3) .form-group .search-btn{  /* B
 
     transition: 0.2s ease;
 }
-main section:first-of-type article:nth-of-type(3) .form-group .search-btn:hover{
+main section article:nth-of-type(3) .form-group .search-btn:hover{
     background: var(--search-btn-hover-bg-color);
 }
 
 /* Dropdown */
-main section:first-of-type article:nth-of-type(3) .form-group #language{    /* Dropdown with an id of language under the form with a class of form-group under the third article under the first section that is under <main> */
+main section article:nth-of-type(3) .form-group #language{    /* Dropdown with an id of language under the form with a class of form-group under the third article under the section that is under <main> */
     position: absolute;
     right: 1rem;
     top: 1.5rem;
@@ -176,17 +176,17 @@ main section:first-of-type article:nth-of-type(3) .form-group #language{    /* D
     
     padding: 0;
 }
-main section:first-of-type article:nth-of-type(3) .form-group #language:hover{
+main section article:nth-of-type(3) .form-group #language:hover{
     background: var(--language-card-hover-bg-color);
 }
 
-main section:first-of-type article:last-of-type{    /* Last article under the first section that is under main */
+main section article:last-of-type{    /* Last article under the section that is under main */
     margin-top: 3rem;
     margin-left: 5rem;
     
     position: relative;
 }
-main section:first-of-type article:last-of-type .lang-btn{  /* Button with a class of lang-btn under the last article under the first section that is under main */
+main section article:last-of-type .lang-btn{  /* Button with a class of lang-btn under the last article under the section that is under main */
     color: var(--main-color);
     
     font-weight: 700;
@@ -199,19 +199,19 @@ main section:first-of-type article:last-of-type .lang-btn{  /* Button with a cla
     
     cursor: pointer;
 }
-main section:first-of-type article:last-of-type .lang-btn .fa{  /* Icon under the button with a class of lang-btn under the last article under the first section that is under main */
+main section article:last-of-type .lang-btn .fa{  /* Icon under the button with a class of lang-btn under the last article under the section that is under main */
     font-weight: bold;
     
     margin-left: 1rem;
 }
-main section:first-of-type article:last-of-type .lang-btn:focus{
+main section article:last-of-type .lang-btn:focus{
     border-color: var(--main-color);
     
     box-shadow: inset 0 0 0 1px var(--main-color);
 }
 
-/* Pseduo-elements of last article under the first section that is under main */
-main section:first-of-type article:last-of-type::before{
+/* Pseduo-elements of last article under the section that is under main */
+main section article:last-of-type::before{
     content: "";
     
     height: 1px;
@@ -222,7 +222,7 @@ main section:first-of-type article:last-of-type::before{
     position: absolute;
     left: -8rem;
 }
-main section:first-of-type article:last-of-type::after{
+main section article:last-of-type::after{
     content: "";
  
     height: 1px;
@@ -232,4 +232,9 @@ main section:first-of-type article:last-of-type::after{
  
     position: absolute;
     left: 29.5rem;
+}
+
+hr{
+    margin: 5rem auto;
+    border-color: lightgrey;
 }
