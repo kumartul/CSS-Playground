@@ -8,3 +8,6 @@
 .flex-col{
     flex-direction: column;
 }
+.pos-absolute{
+    position: absolute;
+}
