@@ -8,4 +8,16 @@
 
     --main-border-color: #a2a9b1;
     --input-hover-border-color: #72777d;
+
+    --sidebar-width: 13vw;
+    --container-width: 87vw;
+
+    --navbar-height: 8rem;
+
+    --navbar-link-color: #0645ad;
+    --navbar-link-size: 1.2rem;
+    --navbar-input-bg-color: rgba(255, 255, 255, 0.5);
+    --navbar-input-height: 2.8rem;
+    --navbar-input-width: 28rem;
+    --navbar-lower-bg-color: #f9f9f9;
 }

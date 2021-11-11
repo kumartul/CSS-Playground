@@ -1,0 +1,16 @@
+@import url(./variables.css);
+@import url(./generic.css);
+
+body{
+    align-items: flex-start !important;
+}
+.sidebar{
+    width: var(--sidebar-width);
+    border: 1px solid red;
+    height: 100vw;
+}
+.container{
+    width: var(--container-width);
+    border: 1px solid green;
+    height: 100vw;
+}

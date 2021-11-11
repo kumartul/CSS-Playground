@@ -29,20 +29,60 @@
     <aside class="sidebar">
 
     </aside>
+
+    <!-- Main Parent Container -->
     <div class="container">
+
+        <!-- Navbar -->
         <nav class="navbar">
+
+            <!-- Upper Navbar -->
             <div class="upper">
-                <ul class="links">
-                    <li></li>
+
+                <!-- Hyperlinks -->
+                <ul class="links content-center">
+                    <li><i class="fa fa-user"></i>Not logged in</li>
+                    <li><a href="#">Talk</a></li>
+                    <li><a href="#">Contributions</a></li>
+                    <li><a href="#">Create account</a></li>
+                    <li><a href="#">Log in</a></li>
                 </ul>
             </div>
+
+            <!-- Lower Navbar-->
             <div class="lower">
 
+                <!-- Hyperlink Container -->
+                <div class="action-links content-center">
+
+                    <!-- Left Hyperlinks -->
+                    <ul class="left pos-absolute content-center">
+                        <li class = "active"><a href="#">Article</a></li>
+                        <li><a href="#">Talk</a></li>
+                    </ul>
+
+                    <!-- Right Hyperlinks -->
+                    <ul class="right pos-absolute content-center">
+                        <li class = "active"><a href="#">Read</a></li>
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">View history</a></li>
+                    </ul>
+
+                    <!-- Form -->
+                    <form class="form-group pos-absolute" method = "GET">
+                        <input type="text" name="search_query" id="search" placeholder="Search Wikipedia">
+                        <i class="fa fa-search pos-absolute"></i>
+                    </form>
+                </div>
             </div>
         </nav>
+
+        <!-- Main Content-->
         <main class="main">
 
         </main>
+
+        <!-- Footer -->
         <footer class="footer">
 
         </footer>
