@@ -10,6 +10,10 @@
     <!-- Title -->
     <title>JSON - Wikipedia</title>
 
+    <!-- Prism -->
+    <link rel="stylesheet" href="./prism/prism.css">
+    <script src="./prism/prism.js" defer></script>
+
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -170,25 +174,105 @@
                             <a href="#syntax">Syntax</a>
                             <ol>
                                 <li>4.1 <a href="#character-encoding">Character encoding</a></li>
-                                <li>4.2 <a href="#data-types">Data types</a></li>
-                                <li>4.3 <a href="#semantics">Semantics</a></li>
                             </ol>
                         </li>
-                        <li>5 <a href="#metadata-and-schema">Metadata and schema</a></li>
-                        <li>6 <a href="#uses">Uses</a></li>
-                        <li>7 
-                            <a href="#comparison-with-other-formats">Comparison with other formats</a>
-                            <ol>
-                                <li>7.1 <a href="#yaml">YAML</a></li>
-                                <li>7.2 <a href="#xml">XML</a></li>
-                            </ol>
-                        </li>
-                        <li>8 <a href="#derivatives">Derivatives</a></li>
-                        <li>9 <a href="#see-also">See also</a></li>
-                        <li>10 <a href="#references">References</a></li>
-                        <li>11 <a href="#external-links">External links</a></li>
                     </ol>
                 </aside>
+            </section>
+
+            <!-- Naming and Pronounciation -->
+            <section id="naming-and-pronounciation">
+                <h3>Naming and Pronounciation</h3>
+                <hr>
+                <p>The acronym originated at State Software, a company co-founded by Douglas Crockford and others in March 2001.</p>
+                <br>
+                <p>The 2017 international standard (ECMA-404 and ISO/IEC 21778:2017) specifies "Pronounced /ˈdʒeɪ.sən/, as in 'Jason and The Argonauts'".[1][2] The first (2013) edition of ECMA-404 did not address the pronunciation.[3] The UNIX and Linux System Administration Handbook states that "Douglas Crockford, who named and promoted the JSON format, says it's pronounced like the name Jason. But somehow, 'JAY-sawn' seems to have become more common in the technical community."[4] Crockford said in 2011, "There's a lot of argument about how you pronounce that, but I strictly don't care."[5]</p>
+            </section>
+
+            <!-- Standards -->
+            <section id="standards">
+                <h3>Standards</h3>
+                <hr>
+                <p>After RFC 4627 had been available as its "informational" specification since 2006, JSON was first standardized in 2013, as ECMA-404.[6] RFC 8259, published in 2017, is the current version of the Internet Standard STD 90, and it remains consistent with ECMA-404.[7] That same year, JSON was also standardized as ISO/IEC 21778:2017.[1] The ECMA and ISO standards describe only the allowed syntax, whereas the RFC covers some security and interoperability considerations.[8]</p>
+            </section>
+
+            <!-- History -->
+            <section id="history">
+                <h3>History</h3>
+                <hr>
+
+                <!-- Douglas Crockford Image -->
+                <div class="img">
+                    <img src="./public/assets/images/douglas_crockford.jpg" alt="Douglas Crockford at the Yahoo Building (2007)">
+                    <p>Douglas Crockford at the Yahoo Building (2007)</p>
+                </div>
+                <p>JSON grew out of a need for stateless, real-time server-to-browser communication protocol without using browser plugins such as Flash or Java applets, the dominant methods used in the early 2000s.[9]</p>
+                <br>
+                <p>A precursor to the JSON libraries was used in a children's digital asset trading game project named Cartoon Orbit at Communities.com (at which State Software's co-founders had all worked previously) for Cartoon Network, which used a browser side plug-in with a proprietary messaging format to manipulate Dynamic HTML elements (this system is also owned by 3DO). Upon discovery of early Ajax capabilities, digiGroups, Noosh, and others used frames to pass information into the user browsers' visual field without refreshing a Web application's visual context, realizing real-time rich Web applications using only the standard HTTP, HTML and JavaScript capabilities of Netscape 4.0.5+ and IE 5+.[citation needed]</p>
+                <br>
+                <p>Crockford first specified and popularized the JSON format.[10] The State Software co-founders agreed to build a system that used standard browser capabilities and provided an abstraction layer for Web developers to create stateful Web applications that had a persistent duplex connection to a Web server by holding two Hypertext Transfer Protocol (HTTP) connections open and recycling them before standard browser time-outs if no further data were exchanged. The co-founders had a round-table discussion and voted whether to call the data format JSML (JavaScript Markup Language) or JSON (JavaScript Object Notation), as well as under what license type to make it available. Chip Morningstar developed the idea for the State Application Framework at State Software.[11][12]</p>
+                <br>
+                <p>The system was sold to Sun Microsystems, Amazon.com and EDS. The JSON.org[13] website was launched in 2002. In December 2005, Yahoo! began offering some of its Web services in JSON.[14]</p>
+                <br>
+                <p>JSON was based on a subset of the JavaScript scripting language (specifically, Standard ECMA-262 3rd Edition—December 1999[15]) and is commonly used with JavaScript, but it is a language-independent data format. Code for parsing and generating JSON data is readily available in many programming languages. JSON's website lists JSON libraries by language.</p>
+                <br>
+                <p>In October 2013, Ecma International published the first edition of its JSON standard ECMA-404.[6] That same year, RFC 7158 used ECMA-404 as a reference. In 2014, RFC 7159 became the main reference for JSON's Internet uses, superseding RFC 4627 and RFC 7158 (but preserving ECMA-262 and ECMA-404 as main references). In November 2017, ISO/IEC JTC 1/SC 22 published ISO/IEC 21778:2017[1] as an international standard. On 13 December 2017, the Internet Engineering Task Force obsoleted RFC 7159 when it published RFC 8259, which is the current version of the Internet Standard STD 90.[16][17]</p>
+                <br>
+                <p>Crockford added a clause to the JSON license stating that "The Software shall be used for Good, not Evil," in order to open-source the JSON libraries while mocking corporate lawyers and those who are overly pedantic. On the other hand, this clause led to license compatibility problems of the JSON license with other open-source licenses, as open-source software and free software usually imply no restrictions on the purpose of use.[18]</p>
+            </section>
+
+            <!-- Syntax -->
+            <section id="syntax">
+                <h3>Syntax</h3>
+                <hr>
+                <p>The following example shows a possible JSON representation describing a person.</p>
+                <pre>
+                    <code class = "language-json">
+{
+    "firstName": "John",
+    "lastName": "Smith",
+    "isAlive": true,
+    "age": 27,
+    "address": {
+        "streetAddress": "21 2nd Street",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "10021-3100"
+    },
+    "phoneNumbers": [
+        {
+        "type": "home",
+        "number": "212 555-1234"
+        },
+        {
+        "type": "office",
+        "number": "646 555-4567"
+        }
+    ],
+    "children": [],
+    "spouse": null
+}
+                    </code>
+                </pre>
+            </section>
+            
+            <!-- Character Encoding -->
+            <section id="character-encoding">
+                <h4>Character Encoding</h4>
+                <br>
+                <p>Although Crockford originally asserted and believed that JSON is a strict subset of JavaScript and ECMAScript,[19] his specification actually allows valid JSON documents that are not valid JavaScript; JSON allows the Unicode line terminators U+2028 LINE SEPARATOR and U+2029 PARAGRAPH SEPARATOR to appear unescaped in quoted strings, while ECMAScript 2018 and older does not.[20][21] This is a consequence of JSON disallowing only "control characters". For maximum portability, these characters should be backslash-escaped.</p>
+                <br>
+                <p>JSON exchange in an open ecosystem must be encoded in UTF-8.[7] The encoding supports the full Unicode character set, including those characters outside the Basic Multilingual Plane (U+10000 to U+10FFFF). However, if escaped, those characters must be written using UTF-16 surrogate pairs. For example, to include the Emoji character U+1F610 😐 NEUTRAL FACE in JSON:</p>
+                <br>
+                <pre>
+                    <code class = "language-json">
+{ "face": "😐" }
+// or
+{ "face": "\uD83D\uDE10" }
+                    </code>
+                </pre>
+                <br>
+                <p>JSON became a strict subset of ECMAScript as of the language's 2019 revision.[21][22]</p>
             </section>
         </main>
 
@@ -196,7 +280,6 @@
         <footer class="footer">
 
         </footer>
-        
     </div>
 </body>
 </html>
