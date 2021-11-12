@@ -14,7 +14,8 @@ body{
     width: var(--container-width);
     height: auto;
     
-    border: 1px solid green;
+    border: 1px solid #b8def9;
+    border-right: none;
 }
 
 main{
