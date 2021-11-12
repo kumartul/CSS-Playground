@@ -6,11 +6,93 @@ body{
 }
 .sidebar{
     width: var(--sidebar-width);
-    border: 1px solid red;
     height: 100vw;
+    
+    border: 1px solid red;
 }
 .container{
     width: var(--container-width);
+    height: auto;
+    
     border: 1px solid green;
-    height: 100vw;
+}
+
+main{
+    text-align: start;
+}
+main .header{
+    padding: 1.5rem;
+}
+main .header h1{
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+/* Sections */
+main section,
+main .info{
+    font-size: 1.5rem;
+}
+main .info,
+main .intro{
+    padding: 2rem;
+}
+main .info p:last-of-type{  /* Last paragraph of the section with a class of info under the main */
+    margin-left: 1rem;
+    
+    color: grey;
+}
+main .info blockquote{
+    margin-left: 2rem;
+}
+main .intro{
+    padding-top: 0;
+}
+main a:hover{
+    text-decoration: underline;
+}
+
+/* Left Box */
+main .intro .left{
+    width: 20%;
+    
+    margin-top: 1rem;
+}
+main .intro .left h4{
+    text-align: center;
+}
+main .intro .left h4 span{
+    color: blue;
+    
+    font-weight: 100;
+    
+    cursor: pointer;
+}
+main .intro .left h4 span:hover{
+    text-decoration: underline;
+}
+main .intro .left ol li > ol{
+    margin-left: 2rem;
+}
+
+/* Right Box */
+main .intro .right{
+    float: right;
+}
+main .intro .right h3,
+main .intro .right .img{
+    text-align: center;
+}
+main .intro .right{
+    width: 25%;
+}
+main .intro .right .box table tr{
+    font-size: 1.25rem;
+}
+main .intro .right .box table tr td,
+main .intro .right .box table tr th{
+    padding: 0.25rem;
+}
+main .intro .right .box table tr th{
+    text-align: start;
 }
