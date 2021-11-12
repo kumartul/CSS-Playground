@@ -8,6 +8,13 @@
 .flex-col{
     flex-direction: column;
 }
+
 .pos-absolute{
     position: absolute;
+}
+
+.box{
+    padding: 1rem;
+    background: var(--box-bg-color);
+    border: 1px solid var(--main-border-color);
 }
