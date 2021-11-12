@@ -16,6 +16,7 @@
     height: calc(var(--navbar-height)/2);
 
     box-shadow: 0 0 1rem 1.1rem white;
+    background: white;
 
     z-index: 2;
 }

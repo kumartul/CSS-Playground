@@ -9,8 +9,6 @@ body{
 .sidebar{
     width: var(--sidebar-width);
     height: 100vw;
-    
-    border: 1px solid red;
 }
 .container{
     width: var(--container-width);
@@ -23,6 +21,8 @@ main{
     border: 1px solid #b8def9;
     border-right: none;
     border-top: none;
+
+    background: white;
 }
 main .header{
     padding: 1.5rem;
@@ -121,4 +121,31 @@ main #history .img{
     background-color: var(--box-bg-color);
     
     width: 20%;
+}
+
+/* Sidebar */
+.sidebar{
+    margin-top: 3rem;
+}
+.sidebar img{
+    width: 10rem;
+    
+    z-index: 3;
+}
+.sidebar .links{
+    text-align: start;
+    
+    padding: 2rem;
+}
+.sidebar .links li{
+    margin-top: 0.5rem;
+}
+.sidebar .links li a{
+    font-size: 1.2rem;
+    
+    color: var(--navbar-link-color);
+}
+
+.sidebar a:hover{
+    text-decoration: underline;
 }
