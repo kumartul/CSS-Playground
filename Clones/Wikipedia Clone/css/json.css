@@ -34,7 +34,7 @@ main .info{
     font-size: 1.5rem;
 }
 main .info,
-main .intro{
+main section{
     padding: 2rem;
 }
 main .info p:last-of-type{  /* Last paragraph of the section with a class of info under the main */
