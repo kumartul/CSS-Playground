@@ -3,6 +3,8 @@
 
 body{
     align-items: flex-start !important;
+
+    background-color: #f6f6f6;
 }
 .sidebar{
     width: var(--sidebar-width);
@@ -19,7 +21,7 @@ body{
 
 main{
     text-align: start;
-    
+
     border: 1px solid #b8def9;
 }
 main .header{
