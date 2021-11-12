@@ -15,14 +15,14 @@ body{
 .container{
     width: var(--container-width);
     height: auto;
-    
-    border-right: none;
 }
 
 main{
     text-align: start;
-
+    
     border: 1px solid #b8def9;
+    border-right: none;
+    border-top: none;
 }
 main .header{
     padding: 1.5rem;
