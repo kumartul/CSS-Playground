@@ -1,3 +1,29 @@
 .footer{
     width: 100%;
+    text-align: start;
+    padding: 2rem;
+}
+.footer div{
+    display: flex;
+    align-items: center;
+}
+.footer p{
+    font-size: 1.2rem;
+}
+.footer div .left .links li{
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+.footer div .left .links li a{
+    color: var(--navbar-link-color);
+}
+.footer div .left .links li a:hover{
+    text-decoration: underline;
+}
+.footer div .right{
+    position: absolute;
+    right: 1rem;
+}
+.footer div .right .btn-links li{
+    margin-right: 1rem;
 }
