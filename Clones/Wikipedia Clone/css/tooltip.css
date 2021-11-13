@@ -1,0 +1,27 @@
+.tooltip{
+    
+    background: white;
+    
+    width: 60rem;
+    
+    display: flex;
+    justify-content: center;
+    
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    z-index: 5;
+}
+.tooltip img{
+    width: 30rem;
+}
+.tooltip .text{
+    font-size: 1.5rem;
+    
+    text-align: start;
+    
+    padding: 1.5rem;
+}
