@@ -1,7 +1,0 @@
-[
-    {
-        "programming languages": "A programming language is a formal language comprising a set of strings that produce various kinds of machine code output. Programming languages are one kind of computer language, and are used in computer programming to implement algorithms.",
-        "src": "../public/assets/images/c_code.png",
-        "alt": "The source code for a simple computer program written in the C programming language. The gray lines are comments that help explain the program to humans in a natural language. When compiled and run, it will give the output 'Hello, world!'"
-    }
-]
