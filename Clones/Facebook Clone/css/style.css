@@ -7,5 +7,5 @@
     box-sizing: border-box; /* Use the alternative box model instead of the standard one */
 }
 html{
-    font-family: 62.5%; /* Now, 1rem = 10px */
+    font-size: 62.5%; /* Now, 1rem = 10px */
 }
