@@ -1,0 +1,6 @@
+@import url(./generic.css);
+@import url(./variables.css);
+
+body{
+    width: 100vw;
+}
