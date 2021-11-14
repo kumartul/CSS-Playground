@@ -7,6 +7,24 @@ body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Main */
+main{
+    padding-bottom: 11.2rem;
+    padding-top: 7.2rem;
+    
+    min-width: 50rem;
+
+    justify-content:space-evenly !important;
+}
+
+/* Left Container */
+main .left{
+    width: 50rem;
+}
+main .left img{
+    margin-left: -3rem;
+}
+
 /* Logo and Motto */
 main .left img{
     height: 10.6rem;
@@ -14,6 +32,11 @@ main .left img{
 main .left h2{
     font-size: 2.8rem;
     font-weight: normal;
+}
+
+/* Right Container */
+main .right{
+    margin-top: 8rem;
 }
 
 /* Form */
@@ -26,7 +49,7 @@ main .right .form-group{
     
     padding: 2rem 0 2.8rem;
     
-    width: 35.6rem;
+    width: 40rem;
 }
 
 /* Input Fields */
@@ -38,7 +61,7 @@ main .right .form-group input{
     
     padding: 1.4rem 1.6rem;
     
-    width: 33rem;
+    width: 38rem;
     
     color: #1d2129;
     caret-color: var(--main-color);
@@ -81,7 +104,7 @@ main .right .form-group button:hover{
 }
 
 main .right .form-group button[type="submit"]{
-    width: 33.2rem;
+    width: 37.8rem;
 
     background-color: var(--main-color);
 }
@@ -102,4 +125,14 @@ main .right h3{
     margin-top: 2.5rem;
     font-size: 1.4rem;
     font-weight: normal;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+    main{
+        flex-wrap: wrap;
+    }
+    main .left{
+        text-align: center;
+    }
 }
