@@ -1,3 +1,105 @@
 @import url(./generic.css);
 @import url(./variables.css);
 
+body{
+    background-color: var(--body-bg-color);
+
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Logo and Motto */
+main .left img{
+    height: 10.6rem;
+}
+main .left h2{
+    font-size: 2.8rem;
+    font-weight: normal;
+}
+
+/* Form */
+main .right .form-group{
+    background-color: white;
+    
+    border-radius: 0.8rem;
+    
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    
+    padding: 2rem 0 2.8rem;
+    
+    width: 35.6rem;
+}
+
+/* Input Fields */
+main .right .form-group input{
+    border-radius: 0.6rem;
+    border: 1px solid #dddfe2;
+    
+    font-size: 1.7rem;
+    
+    padding: 1.4rem 1.6rem;
+    
+    width: 33rem;
+    
+    color: #1d2129;
+    caret-color: var(--main-color);
+    
+    line-height: 1.6rem;
+    
+    vertical-align: middle;
+}
+main .right .form-group input:focus{
+    border-color: var(--main-color);
+
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+main .right .form-group input:focus::-webkit-input-placeholder{
+    color: #bfc3c9;
+}
+
+/* Link */
+main .right .form-group a{
+    color: var(--main-color);
+
+    font-size: 1.4rem;
+}
+main .right .form-group a:hover{
+    text-decoration: underline;
+}
+
+/* hr */
+main .right .form-group .hr{
+    border-bottom: 1px solid #dadde1;
+    
+    width: 95%;
+    
+    margin: 1rem auto 2.5rem auto;
+}
+
+/* Buttons */
+main .right .form-group button:hover{
+    transition: 200ms cubic-bezier(0.08, 0.52, 0.52, 1) all;
+}
+
+main .right .form-group button[type="submit"]{
+    width: 33.2rem;
+
+    background-color: var(--main-color);
+}
+main .right .form-group button[type="submit"]:hover{
+    background-color: var(--main-hover-color);
+}
+main .right .form-group button[type="button"]{
+    background-color: #42b72a;
+
+    font-size: 1.7rem;
+}
+main .right .form-group button[type="button"]:hover{
+    background-color: #36a420;
+}
+
+/* Info */
+main .right h3{
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+    font-weight: normal;
+}
