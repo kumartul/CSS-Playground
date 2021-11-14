@@ -123,11 +123,12 @@ main .right .form-group button[type="button"]:hover{
 /* Info */
 main .right h3{
     margin-top: 2.5rem;
+    
     font-size: 1.4rem;
     font-weight: normal;
 }
 
-/* Responsiveness */
+/* Responsiveness (Main Content) */
 @media (max-width: 900px) {
     main{
         flex-wrap: wrap;
@@ -135,4 +136,74 @@ main .right h3{
     main .left{
         text-align: center;
     }
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    
+    background-color: white;
+    
+    padding: 2rem 18rem;
+}
+
+/* Footer Span */
+footer span,
+footer p{
+    line-height: 1.6;
+    
+    color: #8a8d91;
+    font-size: 1.2rem;
+    
+    cursor: pointer;
+    
+    margin-right: 1.5rem;
+}
+footer span.active{
+    color: #737373;
+    
+    cursor: auto;
+}
+footer span.active:hover{
+    text-decoration: none;
+}
+footer span:hover{
+    text-decoration: underline;
+}
+
+/* Footer divs */
+footer div{
+    padding: 1rem 0;
+}
+
+/* Upper portion of the footer */
+footer .upper{
+    border-bottom: 1px solid #dadde1;
+}
+
+/* Footer Button */
+footer .upper button{
+    padding: 0 1rem;
+    
+    color: rgb(87, 85, 85);
+    font-size: 2rem;
+    font-weight: bolder;
+    
+    cursor: pointer;
+    
+    border: 1px solid lightgrey;
+    border-radius: 0.15rem;
+}
+
+/* Lower portion of the footer */
+footer .lower{
+    padding-bottom: 0;
+}
+
+/* Copyright Info */
+footer p{
+    color: #737373;
+    font-size: 1.1rem;
+    
+    margin-top: 2rem;
 }
