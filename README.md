@@ -21,6 +21,16 @@ Create and Destroy
 ### Let's Type!!!
 ![](public/GIF/Typing.gif)
 
+### WikiPedia Clone
+
+**Original**
+![](public/images/Original.png)
+![](public/GIF/Original2.gif)
+
+**Clone**
+![](public/GIF/Clone2.gif)
+![](public/Images/Clone.png)
+
 ---
 
 ## BootStrap Arena
