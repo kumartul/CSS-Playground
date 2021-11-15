@@ -24,12 +24,12 @@ Create and Destroy
 ### WikiPedia Clone
 
 **Original**
-![](public/images/Original.png)
+![](public/Images/Original.png)
 ![](public/GIF/Original2.gif)
 
 **Clone**
-![](public/GIF/Clone2.gif)
 ![](public/Images/Clone.png)
+![](public/GIF/Clone2.gif)
 
 ---
 
