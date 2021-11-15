@@ -1,3 +1,99 @@
 @import url(./generic.css);
 @import url(./variables.css);
 
+/* Navbar */
+.navbar{
+    background-color: white;
+    
+    height: var(--navbar-height);
+    width: 100%;
+    
+    color: var(--navbar-color);
+    
+    box-shadow: 0 0 2px 2px #dddfe2;
+    
+    justify-content: start !important;
+}
+
+/* Left Portion of Navbar */
+.navbar .left{
+    margin-left: 1.6rem;
+    margin-right: 2.5rem;
+}
+
+/* Logo */
+.navbar .left img{
+    height: 4rem;
+    width: 4rem;
+}
+
+/* Input Field */
+.navbar .left input{
+    height: 4rem;
+    
+    border: none;
+    border-radius: 5rem;
+    
+    color: rgb(5, 5, 5);
+    font-weight: normal;
+    font-size: 1.5rem;
+    
+    padding: 0.7rem 1.6rem 0.9rem 3.6rem;
+    margin-left: 1rem;
+    
+    background-color: rgb(240, 242, 245);
+}
+.navbar .left input::-webkit-input-placeholder{
+    color: #7d7e83;
+}
+
+/* Search Icon */
+.navbar .left #search-icon{
+    font-size: 1.5rem;
+    color: #7d7e83;
+    
+    position: absolute;
+    left: 8rem;
+}
+.navbar .left #search-icon path{
+    fill: #64676a;
+}
+
+/* Center portion of the navbar */
+.navbar .center{
+    margin: auto;
+    
+    width: 100%;
+}
+
+/* Icons */
+.navbar .center .icon{
+    width: 10.25rem;
+    height: 5rem;
+    
+    margin-left: 2rem;
+    
+    border-radius: 1rem;
+        
+    cursor: pointer;
+}
+.navbar .center .icon:hover{
+    background-color: #f6f6f6;
+}
+.navbar .center .icon svg path{
+    fill: #65676b;
+}
+
+/* Active Icon */
+.navbar .center .active{
+    border-radius: 0;
+    border-bottom: 3px solid var(--main-color);
+    
+    height: var(--navbar-height);
+}
+.navbar .center .active:hover{
+    background-color: transparent;
+}
+.navbar .center .active svg path{
+    fill: var(--main-color);
+}
