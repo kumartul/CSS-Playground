@@ -2,8 +2,6 @@
 @import url(./variables.css);
 
 body{
-    background-color: var(--body-bg-color);
-
     font-family: Helvetica, Arial, sans-serif;
 }
 
