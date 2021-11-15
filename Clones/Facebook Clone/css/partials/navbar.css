@@ -18,7 +18,10 @@
 /* Left Portion of Navbar */
 .navbar .left{
     margin-left: 1.6rem;
-    margin-right: 3rem;
+
+    width: 100%;
+
+    justify-content: start !important;
 }
 
 /* Logo */
@@ -62,6 +65,7 @@
 /* Center portion of the navbar */
 .navbar .center{
     margin: auto;
+    margin-left: 4rem;
     
     width: 100%;
 }
@@ -96,4 +100,86 @@
 }
 .navbar .center .active svg path{
     fill: var(--main-color);
+}
+
+/* Right portion of the navbar */
+.navbar .right{
+    width: 100%;
+    
+    justify-content: start !important;
+    
+    margin-left: 10rem;
+}
+
+/* 'Find Friends' Button */
+.navbar .right button{
+    font-weight: bold;   
+    font-size: 1.5rem;
+    color: #343536;
+    
+    border: none;
+    border-radius: 1.8rem;
+    
+    padding: 1rem 1.2rem;
+    margin-right: 1rem;
+    
+    background-color: #e4e6eb;
+    
+    cursor: pointer;
+}
+.navbar .right button:hover,
+.navbar .right .action-btn-container .icon:hover{
+    background-color: rgb(216, 217, 219);
+}
+
+/* Profile Pic */
+.navbar .right img{
+    width: 3rem;
+    height: 3rem;
+    
+    border-radius: 50%;
+    
+    margin-right: 0.25rem;
+}
+
+/* User Name */
+.navbar .right span{
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    
+    width: 5rem;
+    
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: tahoma;
+    color: #050505;
+    
+    line-height: 1.333;
+}
+
+/* Icon */
+.navbar .right .action-btn-container .icon{
+    background-color: #e4e6eb;
+    
+    border-radius: 50%;
+    
+    width: 4rem;
+    height: 4rem;
+    
+    position: relative;
+    top: auto;
+    left: auto;
+    
+    margin-left: 0.7rem;
+    
+    cursor: pointer;
+}
+.navbar .right .action-btn-container .icon svg{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.navbar .right .action-btn-container .icon svg:first-of-type,
+.navbar .right .action-btn-container .icon svg:last-of-type{    /* First and last svg */
+    font-size: 2rem;
 }
