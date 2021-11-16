@@ -8,3 +8,7 @@
 .main{
     width: calc(100% - var(--sidebar-width));
 }
+
+.container{
+    align-items: flex-start !important; /* Override .content-center { align-items: center; } */ 
+}
