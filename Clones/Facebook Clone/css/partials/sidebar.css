@@ -1,3 +1,76 @@
 @import url(./generic.css);
 @import url(./variables.css);
 
+/* Left Sidebar */
+
+.container .left{
+    padding: 1rem;
+
+    height: auto;
+    
+    align-items: flex-start !important; /* Override .content-center { align-items: center; } */
+
+}
+.container .left .links{
+    width: 100%;
+
+    user-select: none;
+}
+
+/* Images */
+.container .left .links li img{
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+}
+.container .left .links li:first-of-type img{   /* Image under the first li */
+    border-radius: 50%;
+}
+
+/* Links */
+.container .left .links li a{
+    color: rgb(5, 5, 5);
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    justify-content: start !important;  /* Override .content-center { justify-content: center; } */
+    
+    line-height: 1.333;
+    
+    padding: 0.75rem;
+
+    border-radius: 0.8rem;
+}
+.container .left .links li:hover > a{
+    background-color: #e5e5e5;    
+}
+
+/* Last Link */
+.container .left .links li:last-of-type{
+    margin-top: 0.5rem;
+}
+.container .left .links li:last-of-type a i{
+    font-weight: bold;
+    
+    background-color: #dadada;
+    
+    padding: 0.5rem 0.75rem;
+    margin-right: 1rem;
+    
+    border-radius: 50%;
+}
+
+/* Footer */
+.container .left .footer{
+    margin: 0.75rem 1rem;
+}
+.container .left .footer a,
+.container .left span{
+    color: grey;
+    font-size: 1.25rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container .left .footer a:hover{
+    text-decoration: underline;
+}

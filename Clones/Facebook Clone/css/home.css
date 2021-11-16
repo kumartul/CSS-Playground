@@ -1,6 +1,10 @@
 @import url(./generic.css);
 @import url(./variables.css);
 
-body{
-    width: 100vw;
+.sidebar,
+.right{
+    width: var(--sidebar-width);
+}
+.main{
+    width: calc(100% - var(--sidebar-width));
 }
