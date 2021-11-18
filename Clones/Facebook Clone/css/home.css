@@ -168,3 +168,70 @@
 .main .create-post .lower .feeling-activity svg path{
     fill: rgb(247, 185, 40);
 }
+
+/* Post */
+/* User-Info */
+.main .post{
+    border: 1px solid blue;
+    
+    padding: 0;
+    
+    width: 35.5vw;
+}
+.main .post .user-info{
+    width: 100%;
+    height: 5rem;
+    
+    justify-content: start !important;  /* Override .content-center { justify-content: center; } */
+}
+
+/* Left portion of the user-info */
+.main .post .user-info .left img{
+    width: 4rem;
+    height: 4rem;
+    
+    border-radius: 50%;
+}
+
+/* Center portion of the user-info */
+.main .post .user-info .center{
+    color: grey;
+    font-size: 1.4rem;
+}
+.main .post .user-info .center strong{
+    color: black;
+}
+
+/* Right Portion of the User-Info */
+.main .post .right{
+    margin: auto;
+    
+    position: relative;
+    right: -7rem;
+    top: -1.25rem;
+    
+    height: auto;
+    width: auto;
+}
+.main .post .user-info .right button{
+    background: transparent;
+    
+    border: none;
+    border-radius: 50%;
+    
+    color: grey;
+    font-size: 3rem;
+    font-weight: bolder;
+    
+    cursor: pointer;
+    
+    padding: 0.25rem;
+}
+.main .post .user-info .right button:hover{
+    background-color: #e5e5e5;
+}
+
+/* Content */
+.main .post .content img{
+    width: 100%;
+}
