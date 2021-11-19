@@ -1,6 +1,12 @@
 @import url(./generic.css);
 @import url(./variables.css);
 
+/* Sidebar */
+.container .sidebar{
+    position: fixed;
+    top: var(--navbar-height)
+}
+
 /* Left Sidebar */
 
 .container .left{
@@ -10,6 +16,7 @@
     
     align-items: flex-start !important; /* Override .content-center { align-items: center; } */
 
+    left: 0;
 }
 .container .left .links{
     width: 100%;
@@ -80,6 +87,8 @@
     height: 100vh;
 
     padding: 2rem;
+
+    right: 0;
 }
 .container .right h2{
     color: rgb(101, 103, 107);
