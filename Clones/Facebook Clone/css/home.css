@@ -244,7 +244,7 @@
     height: 4rem;
     
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Left portion of the response box */
@@ -263,4 +263,42 @@
     font-size: 1.5rem;
     
     margin-left: 18rem;
+}
+
+/* Action Buttons */
+.main .post .action-btn-container{
+    width: 95%;
+    
+    margin: auto;
+    
+    border-bottom: 1px solid #e4e6eb;
+    
+    padding-bottom: 0.5rem;
+}
+.main .post .action-btn-container .action-btn{
+    width: 100%;
+    
+    background-color: transparent;
+    
+    border: none;
+    border-radius: 0.25rem;
+    
+    padding: 0.8rem 1rem;
+    
+    cursor: pointer;
+    
+    color: grey;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.main .post .action-btn-container .action-btn i{
+    margin-right: 1rem;
+    
+    font-size: 2rem;
+}
+.main .post .action-btn-container .action-btn:hover{
+    background-color: #e6e6e6;
+}
+.main .post .action-btn-container .action-btn:not(:first-of-type){
+    margin-left: 1rem;
 }
