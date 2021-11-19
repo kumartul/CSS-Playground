@@ -172,9 +172,8 @@
 /* Post */
 /* User-Info */
 .main .post{
-    border: 1px solid blue;
-    
     padding: 0;
+    padding-bottom: 1rem;
     
     width: 35.5vw;
 }
