@@ -9,6 +9,8 @@
 /* Global Container */
 .container{
     align-items: flex-start !important; /* Override .content-center { align-items: center; } */ 
+
+    margin-top: var(--navbar-height);
 }
 
 /* News Feed */
