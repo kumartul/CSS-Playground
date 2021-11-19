@@ -380,3 +380,32 @@
  
     font-size: 1.5rem;
 }
+
+/* No More Posts Box */
+.main .no-more-posts{
+    width: 35.5vw;
+    
+    padding: 3rem 1rem;
+}
+.main .no-more-posts h2{
+    color: #65676b;
+    font-size: 2rem;
+}
+.main .no-more-posts p{
+    color: #65676b;
+    font-size: 1.75rem;
+}
+.main .no-more-posts button{
+    background-color: #0571ed;
+    
+    border: none;
+    border-radius: 0.5rem;
+
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.main .no-more-posts button a{
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
