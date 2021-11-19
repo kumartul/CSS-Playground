@@ -235,3 +235,32 @@
 .main .post .content img{
     width: 100%;
 }
+
+/* Response */
+.main .post .response{
+    border-bottom: 1px solid #e4e6eb;
+    
+    width: 95%;
+    height: 4rem;
+    
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+/* Left portion of the response box */
+.main .post .response .left{
+    margin-left: -1rem;
+}
+.main .post .response .left span{
+    font-size: 1.5rem;
+    
+    margin-left: 1rem;
+}
+
+/* Right portion of the response box */
+.main .post .response .right{
+    color: #4a4a4a;
+    font-size: 1.5rem;
+    
+    margin-left: 18rem;
+}
