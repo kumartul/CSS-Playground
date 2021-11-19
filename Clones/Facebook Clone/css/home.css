@@ -345,9 +345,23 @@
     color: grey;
     font-weight: 600;
     font-size: 1.25rem;
+
+    border: none;
 }
 .main .post .comments .comment .action-btn-container span:not(:last-of-type):hover{
     text-decoration: underline;
     
     cursor: pointer;
+}
+
+/* Write Comment Section */
+.main .post .write-comment{
+    justify-content: start !important;  /* Override .content-center { justify-content: center; } */
+}
+.main .post .write-comment img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+.main .post .write-comment .action-btn-container{
 }
