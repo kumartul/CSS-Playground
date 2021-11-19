@@ -293,7 +293,7 @@
 }
 .main .post .action-btn-container .action-btn i{
     margin-right: 1rem;
-    
+
     font-size: 2rem;
 }
 .main .post .action-btn-container .action-btn:hover{
@@ -301,4 +301,53 @@
 }
 .main .post .action-btn-container .action-btn:not(:first-of-type){
     margin-left: 1rem;
+}
+
+/* Comments' Section */
+.main .post .comments{
+    width: 95%;
+    
+    margin: auto;
+    margin-top: 1rem;
+}
+
+/* Comment */
+.main .post .comments .comment{
+    width: 100%;
+
+    align-items: flex-start !important; /* Override .content-center { align-items: center; } */
+    justify-content: start !important;  /* Override .content-center { justify-content: center; } */
+}
+.main .post .comments .comment .main-info .image img{
+    width: 4rem;
+    height: 4rem;
+    
+    border-radius: 50%;
+}
+.main .post .comments .comment .main-info .content{
+    margin-left: 1rem;
+    padding: 0.8rem 1rem;
+    
+    background-color: rgb(240, 242, 245);
+    
+    font-size: 1.4rem;
+    
+    border-radius: 1rem;
+}
+.main .post .comments .comment .main-info .content strong{
+    font-weight: 500;
+}
+.main .post .comments .comment .action-btn-container{
+    justify-content: start !important;  /* Override .content-center { justify-content: center; } */
+ 
+    margin-left: 5.5rem;
+ 
+    color: grey;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.main .post .comments .comment .action-btn-container span:not(:last-of-type):hover{
+    text-decoration: underline;
+    
+    cursor: pointer;
 }
