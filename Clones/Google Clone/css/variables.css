@@ -1,4 +1,6 @@
 :root{
     --grey: rgb(95, 99, 104);
     --light-grey: rgba(60, 64, 67, 0.08);
+    --medium-grey: rgba(141, 144, 146, 0.8);
+    --black: rgba(0, 0, 0, 0.87);
 }

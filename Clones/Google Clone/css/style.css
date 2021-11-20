@@ -29,7 +29,6 @@ html{
 
 /* Navbar Links */
 .navbar .links{
-    display: flex;
     justify-content: end;
     align-items: center;
 }
@@ -70,4 +69,52 @@ html{
 }
 .navbar .links li img{
     border-radius: 50%;
+}
+
+/* Main Content */
+
+/* Form */
+.main .form{
+    margin-top: 2.5rem;
+}
+
+/* Icons */
+.main .form .form-group svg{
+    position: relative;
+    top: auto;
+}
+.main .form .form-group svg:first-of-type{
+    height: 2rem;
+    width: 2rem;
+
+    right: -3rem;
+}
+.main .form .form-group svg:first-of-type path{
+    fill: var(--medium-grey);
+}
+.main .form .form-group svg:last-of-type{
+    height: 2.5rem;
+    width: 2.5rem;
+
+    left: -4rem;
+
+    cursor: pointer;
+}
+.main .form .form-group input{
+    color: var(--black);
+    font-size: 1.6rem;
+    
+    width: 57.5rem;
+    height: 3.5rem;
+    
+    word-wrap: break-word;
+    
+    border-radius: 10rem;
+    border: 1px solid lightgrey;
+    
+    padding: 2.25rem 5rem 2.25rem 4rem;
+}
+.main .form .form-group input:hover,
+.main .form .form-group input:focus{
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
 }
