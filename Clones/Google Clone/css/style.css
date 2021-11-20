@@ -156,3 +156,19 @@ html{
        
     box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
 }
+
+/* Paragraph */
+.main .text{
+    margin-top: 1.5rem;
+}
+.main .text p{
+    font-size: 1.3rem;
+}
+.main .text p a{
+    color: var(--blue);
+    
+    padding: 0 3px;
+}
+.main .text p a:hover{
+    text-decoration: underline;
+}
