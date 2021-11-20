@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box; /* Use the alternate box model instead of the standard one */
+}
+html{
+    font-size: 62.5%;   /* Now, 1rem = 10px */
+}
+.navbar{
+    width: 100%;
+    height: auto;
+
+    background: transparent;
+
+    border: 1px solid red;
+}
+.navbar .links{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.navbar .links svg{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.navbar .links svg path{
+    fill: grey;
+}
