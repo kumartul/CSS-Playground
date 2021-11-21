@@ -1,1 +1,26 @@
 @import url(./variables.css);
+
+/* Navbar */
+.navbar{
+    width: 100%;
+    height: var(--navbar-height);
+    
+    background-color: white;
+    
+    box-shadow: var(--navbar-box-shadow-offset-y) var(--navbar-box-shadow-offset-y) var(--navbar-box-shadow-blur-radius) var(--navbar-box-shadow-spread-radius) var(--navbar-box-shadow-color);
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Left Portion */
+.navbar .left{
+    margin-left: 2.4rem;
+}
+
+/* Logo */
+.navbar .left img{
+    height: 3.2rem;
+    width: 11.6rem;
+}
