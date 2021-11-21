@@ -12,6 +12,9 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="./public/assets/icons/favicon.png">
 
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/navbar.css">
@@ -28,14 +31,37 @@
         </div>
 
         <!-- Center portion -->
-        <div class="center">
+        <div class="center content-center">
             <ul class="links content-center">
-                <li data-isExpandable="true">Products</li>
-                <li>Use Cases</li>
-                <li>Pricing</li>
-                <li data-isExpandable="true">Docs</li>
-                <li>Support</li>
-                <li data-isExpandable="true">More</li>
+                <li class = "content-center" data-isExpandable="true">
+                    Products <i class="fa fa-angle-down"></i>
+                    <ul class="submenu">
+                        <li>Build</li>
+                        <li>Release & Monitor</li>
+                        <li>Engage</li>
+                    </ul>
+                </li>
+                <li class = "content-center">Use Cases</li>
+                <li class = "content-center">Pricing</li>
+                <li class = "content-center" data-isExpandable="true">
+                    Docs <i class="fa fa-angle-down"></i>
+                    <ul class="submenu">
+                        <li>Overview</li>
+                        <li>Fundamentals</li>
+                        <li>Build</li>
+                        <li>Release & Monitor</li>
+                        <li>Engage</li>
+                        <li>Reference</li>
+                        <li>Samples</li>
+                    </ul>
+                </li>
+                <li class = "content-center">Support</li>
+                <li class = "content-center" data-isExpandable="true">
+                    More <i class="fa fa-angle-down"></i>
+                    <ul class="submenu">
+                        <li>Community</li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
