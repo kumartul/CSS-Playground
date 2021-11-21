@@ -17,6 +17,10 @@ html{
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    min-width: 400px;
+}
+
 /* Navbar */
 .navbar{
     width: 100%;
@@ -202,4 +206,17 @@ html{
 }
 .footer .lower .links:last-of-type{
     margin-left: auto;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 703px){
+    .footer .lower{
+        flex-direction: column !important;  /* Override .flex-col { flex-direction: column; } */
+    }
+    .footer .lower .links:last-of-type{
+        margin: auto !important;    /* Override .footer .lower .links:last-of-type { margin-left: auto; } */
+    }
+    .footer .lower .links{
+        padding: 1rem;
+    }
 }
