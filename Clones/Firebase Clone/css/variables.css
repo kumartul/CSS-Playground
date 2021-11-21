@@ -1,7 +1,8 @@
 :root{
     --navbar-box-shadow-offset-x: 0;
     --navbar-box-shadow-offset-y: 0;
-    --navbar-box-shadow-spread-radius: 3px;
-    --navbar-box-shadow-blur-radius: 3px;
+    --navbar-box-shadow-spread-radius: 5px;
+    --navbar-box-shadow-blur-radius: 8px;
     --navbar-box-shadow-color: rgba(0, 0, 0, 0.25);
+    --navbar-height: 4.8rem;
 }
