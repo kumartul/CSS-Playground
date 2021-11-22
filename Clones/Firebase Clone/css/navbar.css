@@ -91,7 +91,7 @@
 .navbar .center .links > li[data-isExpandable="true"]:hover > i{
     transform: rotateZ(-180deg);
 
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 /* Submenu */
@@ -134,4 +134,9 @@
 }
 .navbar .center .links > li .submenu li:hover{
     color: grey;
+}
+
+/* Right Portion */
+.navbar .right .form-group input{
+    
 }
