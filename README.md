@@ -21,6 +21,10 @@ Create and Destroy
 ### Let's Type!!!
 ![](public/GIF/Typing.gif)
 
+---
+
+## Clones
+
 ### WikiPedia Clone
 
 **Original**
