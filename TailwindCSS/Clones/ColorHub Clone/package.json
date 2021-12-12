@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "npx tailwindcss -i ./src/css/style.css -o ./dist/style.css --watch"
   },
   "keywords": [],
   "author": "Atul Kumar <akumarofficial4224@gmail.com> (https://www.github.com/Atul-Kumar-Official)",
