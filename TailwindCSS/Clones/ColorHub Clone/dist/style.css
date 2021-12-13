@@ -915,6 +915,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-width: 1px;
 }
 
+.dark .dark\:border-none {
+  border-style: none;
+}
+
 .dark .dark\:border-gray-700 {
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
@@ -938,6 +942,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .dark .dark\:bg-\[\#18181b\] {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-\[\#1C1C1F\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 28 31 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-\[\#27272A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:text-white {
@@ -973,6 +987,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .dark .dark\:text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .dark .dark\:shadow-none {
