@@ -434,7 +434,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.border, .border-8, .border-b {
+.border, .border-8, .border-b, .dark\:border-b {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
@@ -496,44 +496,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.25rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.ml-24 {
-  margin-left: 6rem;
-}
-
-.ml-20 {
-  margin-left: 5rem;
-}
-
-.ml-16 {
-  margin-left: 4rem;
-}
-
-.ml-\[17px\] {
-  margin-left: 17px;
-}
-
-.ml-\[5rem\] {
-  margin-left: 5rem;
-}
-
 .ml-\[4\.5rem\] {
   margin-left: 4.5rem;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
 }
 
 .mb-4 {
@@ -596,14 +568,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 212px;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-\[90\%\] {
-  width: 90%;
-}
-
 .w-\[80\%\] {
   width: 80%;
 }
@@ -654,10 +618,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.self-start {
-  align-self: flex-start;
 }
 
 .rounded-sm {
@@ -738,14 +698,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.25rem;
 }
 
-.p-16 {
-  padding: 4rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
-}
-
 .p-8 {
   padding: 2rem;
 }
@@ -785,21 +737,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.75rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .py-36 {
   padding-top: 9rem;
   padding-bottom: 9rem;
@@ -822,11 +759,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .text-lg {
@@ -900,21 +832,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
-.text-\[\#f4f4f5\] {
-  --tw-text-opacity: 1;
-  color: rgb(244 244 245 / var(--tw-text-opacity));
-}
-
-.text-\[\#000\] {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -960,9 +877,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .group:hover .dark\:group-hover\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
+.dark .dark\:border-b {
+  border-bottom-width: 1px;
+}
+
+.dark .dark\:border-gray-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
+.dark .group:hover .dark\:group-hover\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
