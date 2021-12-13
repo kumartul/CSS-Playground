@@ -18,8 +18,104 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../public/icons/favicon.png">
+
+    <!-- Custom Style -->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #play-btn:hover{
+            fill: #374151;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Header -->
+    <header class = "fixed top-0 z-40 flex bg-white items-start justify-center w-full border-b shadow-sm border-white">
+
+        <!-- Navbar -->
+        <nav class="flex justify-between items-center flex-grow-0 w-full h-20 px-5">
+
+            <div class = "flex items-center justify-center">
+                <!-- Website Name -->
+                <h1 class = "text-gray-700 font-bold text-2xl leading-snug tracking-tighter font-display font-sans cursor-pointer my-auto">C<span style = "color: #3b82f6;">o</span>lorHub</h1>
     
+                <!-- Dark/Light Mode Toggler -->
+                <svg class="w-6 h-6 my-auto ml-3 text-gray-400 transition-all duration-150 group-hover:text-gray-600 dark:group-hover:text-white cursor-pointer my-auto hover:text-gray-700"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                    </path>
+                </svg>
+            </div>
+
+            <!-- Button -->
+            <button class = "text-white bg-blue-500 rounded-sm font-semibold transition-all duration-150 ease-in-out inline-flex py-3 px-2 items-center justify-center hover:bg-gray-700">
+
+                <!-- Text -->
+                <span>
+                    Get Started 
+                </span>
+
+                <!-- Right Angular Arrow Icon -->
+                <svg class="w-4 h-4 ml-2 my-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class = "w-full mt-20">
+
+        <!-- Introduction -->
+        <section class = "px-16 py-24 grid grid-cols-2 basis-1 bg-[#f4f4f5]">
+            <div>
+                <h2 class = "uppercase text-blue-500 font-semibold tracking-wider">Introducing ColorHub</h2>
+    
+                <h2 class = "text-gray-600 text-5xl font-bold w-full my-5 tracking-wide leading-tight">
+                Find the 
+                <span class = "bg-bottom bg-repeat-x bg-highlight bg-[url('../public/images/highlight.svg')]">perfect color palette</span>
+                for your next project.</h2>
+
+                <p class = "text-gray-600 mb-5">Pick a palette, edit and preview it, and paste the code snippet into your project... it's that simple!</p>
+
+                <div class="flex flex-row">
+                    <button
+                        class="text-white bg-blue-500 rounded-sm font-semibold transition-all duration-150 ease-in-out inline-flex py-4 px-3 items-center justify-center hover:bg-gray-700">
+                    
+                        <!-- Text -->
+                        <span>
+                            Get Started
+                        </span>
+                    
+                        <!-- Right Angular Arrow Icon -->
+                        <svg class="w-4 h-4 ml-2 my-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+    
+                    <img class = "ml-3 cursor-pointer" src="https://colorhub.vercel.app/_next/image?url=https%3A%2F%2Fapi.producthunt.com%2Fwidgets%2Fembed-image%2Fv1%2Ffeatured.svg%3Fpost_id%3D318699%26theme%3Dlight&w=256&q=75" alt="">
+                </div>
+            </div>
+
+            <div id = "video-container" class = "w-full p-3 rounded-sm border border-8 border-white">
+                <img src="../public/images/video-cover.jpg" alt="Video Cover">
+                
+                <!-- Play Button -->
+                <button aria-label="Play video"
+                    id = "play-btn" class="absolute text-blue-500 transition-all duration-150 ease-in-out transform bg-white rounded-full top-1/2 left-[70%] hover:text-gray-700"><svg
+                        class="w-20 h-20 fill-current" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                            clip-rule="evenodd">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
